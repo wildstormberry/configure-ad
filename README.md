@@ -108,7 +108,7 @@ Turn off domain controller's Windows Firewall to test connectivity.
 </p>
 
 
-- After client VM is created, set DNS settings to the domain controller's private IP address.
+After client VM is created, set DNS settings to the domain controller's private IP address.
 - Copy domain controller's private IP address, go to the client's VM network settings. Click network interface/ipconfiguration, DNS servers, and change to custom domain controller's private IP address.
 
 <p> 
