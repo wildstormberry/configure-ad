@@ -19,9 +19,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
+- Step 1: Set up a resource group and virtual network/subnet in Azure.
+- Step 2: Set up domain controller (DC) and client virtual machines. 
+- Step 3: Install Active Directory, create a domain admin user within the domain forest, and join client VM to the forest.
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
