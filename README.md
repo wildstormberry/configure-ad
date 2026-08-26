@@ -56,7 +56,7 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 
 </p>
 
-- Enter appropriate credentials under the "Administrator account" section. Make sure the selected inbound port is set to RDP 3389. *Do not save just yet.*
+- Enter appropriate credentials under the "Administrator account" section. Make sure the selected inbound port is set to RDP 3389. Scroll down and check the box to confirm licensing. *Do not save just yet.*
 
 <p> 
   <img width="1192" height="745" alt="C-DC-2 Admin credentials" src="https://github.com/user-attachments/assets/8332aece-12f7-42d6-b7e2-95cc03f7c691" />
@@ -72,9 +72,12 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 - After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
 
 <p>
+  - Second, create the client VM to test the deployment. Assign the same settings for each section as set in the domain controller previously created, except for the "Image" setting. Select "Windows 11, Pro Version 25H2" as the image and select the appropriate size. Assign the same VNet and subnet previously created to the client VM and save/create. 
   
-</p>
+  *Note* In a real world setting, the "Administrator account" credentials will and should be completely different from the credentials set in the domain controller.
 
+<p> </p>
+  
 </p>
 <br />
 
