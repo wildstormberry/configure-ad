@@ -34,9 +34,13 @@ Set up Domain Controller (DC) and Client-1 Virtual Machines (separate VMs) in Az
 
 - First, in a registered Azure subscription, create, name, select the proper time zone, and save a Resource Group that will house all resources that will be used for the Active Directory environment. These resources include virtual machines, virtual networks/subnets, virtual network interface cards, network security groups, etc.
 <p>
+  
 <img width="907" height="887" alt="A-Create ResourceGrp " src="https://github.com/user-attachments/assets/96aae6ab-0ebd-4801-a86c-0bf6cd2266d5" />
+
 </p>
-- Second, create a virtual network and subnet. Assign the VNet to the recently created resource group. Name and save it, using the same time zone as the assigned resource group. 
+
+- Second, create a virtual network and subnet. Assign the VNet to the recently created resource group. Name and save it, using the same time zone as the assigned resource group.
+- 
 <p> <img width="1550" height="447" alt="B-Create Vnet w Subnet" src="https://github.com/user-attachments/assets/31330f32-447a-428f-a7e6-0614968a0e0e" />
 
 </p>
