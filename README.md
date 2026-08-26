@@ -27,15 +27,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img width="907" height="887" alt="A-Create ResourceGrp " src="https://github.com/user-attachments/assets/96aae6ab-0ebd-4801-a86c-0bf6cd2266d5" />
 
-</p>
-<p>
 Step 1: 
 
 Set up Domain Controller (DC) and Client-1 Virtual Machines (separate VMs) in Azure.
 
-- In a registered Azure account, create, name, and save a Resource Group that will house all resources that will be used for the Active Directory environment. These resources include virtual machines, virtual networks, virtual network interface cards, network security groups, etc. 
+- First, in a registered Azure subscription, create, name, select the proper time zone, and save a Resource Group that will house all resources that will be used for the Active Directory environment. These resources include virtual machines, virtual networks/subnets, virtual network interface cards, network security groups, etc.
+<p>
+<img width="907" height="887" alt="A-Create ResourceGrp " src="https://github.com/user-attachments/assets/96aae6ab-0ebd-4801-a86c-0bf6cd2266d5" />
+
 </p>
 <br />
 
