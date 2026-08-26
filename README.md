@@ -70,9 +70,20 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 </p>
 </p>
 
-- After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
+- After domain controller VM is created, set the NIC private IP address to "static".
+    
 <p>
   <img width="1760" height="882" alt="F-DC-2 Networking Settings - Static NIC" src="https://github.com/user-attachments/assets/a1755ee8-bbbc-4965-af64-d05d6da5fc2f" />
+
+</p>
+
+
+- Go to Remote Desktop Connection to connect to the domain controller VM using its public IP address and administrator account credentials.
+- Once logged into the domain controller VM, right click on the Windows "start" button and click "Run".
+- Type in "wf.msc" to pull up Windows Firewall. Click on "Windows Defender Properties", set firewall state to "off" under each profile, then apply and save.
+
+<p>
+  <img width="992" height="447" alt="H-DC VM Windows FW Off" src="https://github.com/user-attachments/assets/379c7806-9180-49b5-b72f-febc7b5fcb2c" />
 
 </p>
   
@@ -80,7 +91,9 @@ Set up domain controller (DC) and client virtual machines. The domain controller
   
   *Note* In a real world setting, the "Administrator account" credentials will and should be completely different from the credentials set in the domain controller.
 
-<p> </p>
+<p>
+  
+</p>
   
 </p>
 <br />
