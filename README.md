@@ -92,8 +92,7 @@ Set up domain controller (DC) and client virtual machines. The domain controller
   *Note* In a real world setting, the "Administrator account" credentials will and should be completely different from the credentials set in the domain controller.
 
 <p>
-  
-</p>
+<img width="1557" height="546" alt="J-Create ClientVM Windows 11 Pro" src="https://github.com/user-attachments/assets/9b861d71-8f09-40a0-85e1-42538125d1ce" />
   
 </p>
 <br />
