@@ -115,5 +115,11 @@ Turn off domain controller's Windows Firewall to test connectivity.
 
 </p>
 
+- From Azure, restart the client VM. Then, from Remote Desktop, login to client VM and attempt to "ping" the domain controller's private IP address. The output for the DNS settings should show the DC's private IP address. To find this, open PowerShell on the client VM and run ipconfig /all to retrieve info. Ping the IP address to ensure connectivity.
+
+<p>
+  <img width="936" height="535" alt="G-Client VM PwrShll Ping DC " src="https://github.com/user-attachments/assets/fcb720a5-9593-4291-8411-e8c5c0dc0606" />
+
+</p>
 <br />
 
