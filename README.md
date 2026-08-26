@@ -121,5 +121,19 @@ Turn off domain controller's Windows Firewall to test connectivity.
 <img width="1196" height="880" alt="I-ClientVM Ipconfig Test" src="https://github.com/user-attachments/assets/b6691380-f7f6-4521-ba66-532bd3af318c" />
 
 </p>
+
+Step 3: 
+
+Install Active Directory, create a domain admin user within the domain forest, and join client VM to the domain.
+
+- Login to domain controller VM and install Active Directory Domain Services 
+- Promote as a "Domain Controller/DC" 
+- Set up a new "forest" as whateverdomain.com 
+- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: whateverdomain.com\labuser with the same administrator account password. 
+
+<p>
+  
+</p>
+
 <br />
 
