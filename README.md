@@ -56,15 +56,23 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 
 </p>
 
-- Second, enter appropriate credentials under the "Administrator account" section. Make sure the selected inbound port is set to RDP 3389. *Do not save just yet.*
+- Enter appropriate credentials under the "Administrator account" section. Make sure the selected inbound port is set to RDP 3389. *Do not save just yet.*
+
 <p> 
   <img width="1192" height="745" alt="C-DC-2 Admin credentials" src="https://github.com/user-attachments/assets/8332aece-12f7-42d6-b7e2-95cc03f7c691" />
 
 </p>
 
-- Third, under the "Networking" tab, set the virtual network and subnet to the Vnet and subnet previously created. Now you can save/create the domain controller virtual machine.
+- Under the "Networking" tab, set the virtual network and subnet to the Vnet and subnet previously created. Now you can save/create the domain controller virtual machine.
+
 <p> <img width="1122" height="547" alt="E-DC-2 Networking Vnet Settings" src="https://github.com/user-attachments/assets/26f82643-409a-414f-ab66-f6f31a7f3b86" />
 
+</p>
+</p>
+- After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
+
+<p>
+  - After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
 </p>
 
 </p>
