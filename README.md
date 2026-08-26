@@ -69,9 +69,12 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 
 </p>
 </p>
-- After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
 
+- After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
 <p>
+  <img width="1760" height="882" alt="F-DC-2 Networking Settings - Static NIC" src="https://github.com/user-attachments/assets/a1755ee8-bbbc-4965-af64-d05d6da5fc2f" />
+
+</p>
   
   - Second, create the client VM to test the deployment. Assign the same settings for each section as set in the domain controller previously created, except for the "Image" setting. Select "Windows 11, Pro Version 25H2" as the image and select the appropriate size. Assign the same VNet and subnet previously created to the client VM and save/create. 
   
