@@ -72,7 +72,7 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 - After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
 
 <p>
-  - After domain controller VM is created, set the NIC private IP address to "static". Log into the VM and disable the Windows Firewall to test connectivity.
+  
 </p>
 
 </p>
