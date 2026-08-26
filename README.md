@@ -87,7 +87,7 @@ Set up domain controller (DC) and client virtual machines. The domain controller
 </p>
 
 
-Turn off domain controller's Windows Firewall to test for connectivity.
+Turn off domain controller's Windows Firewall to test connectivity.
 - Go to Remote Desktop Connection to connect to the domain controller VM using its public IP address and administrator account credentials.
 - Once logged into the domain controller VM, right click on the Windows "start" button and click "Run".
 - Type in "wf.msc" to pull up Windows Firewall. Click on "Windows Defender Properties", set firewall state to "off" under each profile, then apply and save.
