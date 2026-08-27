@@ -211,9 +211,19 @@ Step 4: Create Users and set up client VM for non-admin users (Remote Desktop fo
 - Login to the domain controller as authz'd admin (jane_admin).
 - Open Windows PowerShell ISE and run as administrator.
 - Create a new file, then paste and run given script into it (will include initial user passwords).
+- Open ADUC to observe created accounts in the appropriate OU folder.
 </p>
+
 <p>
+<img width="1001" height="542" alt="U-Observe User Creation" src="https://github.com/user-attachments/assets/969ef132-8056-4e57-9f22-4e99152435d2" />
   
+</p>
+
+- Test login with any given user to affirm deployment.
+
+<p>
+<img width="1115" height="605" alt="V-Test New User Login" src="https://github.com/user-attachments/assets/8332abcc-42e3-43a9-ba49-8379456a96ef" />
+
 </p>
 <br />
 
