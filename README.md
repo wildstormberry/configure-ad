@@ -124,7 +124,7 @@ Turn off domain controller's Windows Firewall to test connectivity.
 
 Step 3: 
 
-Install Active Directory, create a domain admin user within the domain forest, and join client VM to the domain so that created users can access/login to client VM using the created forest domain.
+Install Active Directory, create a domain admin user within designated domain forest, and join client VM to the domain so that created users can access/login to client VM using the created forest domain.
 
 - Login to domain controller VM and install Active Directory Domain Services
 
