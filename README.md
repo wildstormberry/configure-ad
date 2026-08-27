@@ -135,8 +135,8 @@ Install Active Directory, create a domain admin user within created/designated d
 
 - Promote as a "Domain Controller/DC"
   
-- Set up a new "forest" as whateverdomain.com 
-- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: whateverdomain.com\labuser with the same administrator account password.
+- Set up a new "forest" as mydomain.com 
+- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: mydomain.com\labuser with the same administrator account password.
   
 <p>
   <img width="1130" height="647" alt="M-Promote Server as DC" src="https://github.com/user-attachments/assets/8835267b-51c0-46ff-ab37-0ec3d1541bd9" />
