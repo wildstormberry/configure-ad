@@ -193,5 +193,19 @@ Install Active Directory, create a domain admin user within created/designated d
 
 </p>
 
+Step 4: Create Users and set up client VM for non-admin users (Remote Desktop for demo purposes)
+
+- Log into client VM as mydomain.com\jane_admin (authz'd admin)
+- Configure system settings to allow selected domain groups access to remote desktop/client VM.
+- This allows authorized users within a given group to access a selected VM. 
+
+<p>
+  <img width="1007" height="775" alt="T-RemoteDesktop for Non-Admin on ClientVM" src="https://github.com/user-attachments/assets/1b94faed-95c1-4861-b823-234ed73b2fe7" />
+
+</p>
+
+<B *Note*: Typically, this would be further filtered/controlled by Group Policy but consider the steps for demo purposes. </B>
+
+
 <br />
 
