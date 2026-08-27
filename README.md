@@ -219,7 +219,7 @@ Step 4: Create Users and set up client VM for non-admin users (Remote Desktop fo
   
 </p>
 
-- Test login with any given user to affirm deployment.
+- Test login into client VM with any given user to affirm deployment.
 
 <p>
 <img width="1115" height="605" alt="V-Test New User Login" src="https://github.com/user-attachments/assets/8332abcc-42e3-43a9-ba49-8379456a96ef" />
