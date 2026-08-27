@@ -126,13 +126,26 @@ Step 3:
 
 Install Active Directory, create a domain admin user within the domain forest, and join client VM to the domain so that created users can access/login to client VM using the created forest domain.
 
-- Login to domain controller VM and install Active Directory Domain Services 
-- Promote as a "Domain Controller/DC" 
-- Set up a new "forest" as whateverdomain.com 
-- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: whateverdomain.com\labuser with the same administrator account password. 
+- Login to domain controller VM and install Active Directory Domain Services
 
 <p>
+  <img width="1066" height="781" alt="L-Install Active Directory" src="https://github.com/user-attachments/assets/a8b5c507-5949-4780-988e-9eb5312f9f29" />
+
+</p>
+
+- Promote as a "Domain Controller/DC"
   
+- Set up a new "forest" as whateverdomain.com 
+- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: whateverdomain.com\labuser with the same administrator account password.
+  
+<p>
+  <img width="1130" height="647" alt="M-Promote Server as DC" src="https://github.com/user-attachments/assets/8835267b-51c0-46ff-ab37-0ec3d1541bd9" />
+
+</p>
+
+<p>
+<img width="1132" height="641" alt="N-Create New Forest Domain" src="https://github.com/user-attachments/assets/35426eb9-44cd-4d0c-ab4f-3bbf26458e81" />
+
 </p>
 
 <br />
