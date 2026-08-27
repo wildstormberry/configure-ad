@@ -195,7 +195,7 @@ Install Active Directory, create a domain admin user within created/designated d
 
 Step 4: Create Users and set up client VM for non-admin users (Remote Desktop for demo purposes)
 
-- Log into client VM as mydomain.com\jane_admin (authz'd admin)
+- Log into client VM as mydomain.com\jane_admin (authz'd admin).
 - Configure system settings to allow selected domain groups access to remote desktop/client VM.
 - This allows authorized users within a given group to access a selected VM. 
 
@@ -205,7 +205,15 @@ Step 4: Create Users and set up client VM for non-admin users (Remote Desktop fo
 </p>
 
 <B> *Note*: Typically, this would be further filtered/controlled by Group Policy but consider the steps for demo purposes. </B>
+<p>
 
-
+- Create additional users to have access to VM using PowerShell from the domain controller.
+- Login to the domain controller as authz'd admin (jane_admin).
+- Open Windows PowerShell ISE and run as administrator.
+- Create a new file, then paste and run given script into it (will include initial user passwords).
+</p>
+<p>
+  
+</p>
 <br />
 
