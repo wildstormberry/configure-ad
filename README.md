@@ -168,5 +168,10 @@ Install Active Directory, create a domain admin user within the domain forest, a
   
 </p>
 
+
+The above step is to create dedicated administrator account(s) on the domain controller server to access for daily task. 
+
+
+
 <br />
 
