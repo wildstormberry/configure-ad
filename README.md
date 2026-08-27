@@ -204,7 +204,7 @@ Step 4: Create Users and set up client VM for non-admin users (Remote Desktop fo
 
 </p>
 
-<B *Note*: Typically, this would be further filtered/controlled by Group Policy but consider the steps for demo purposes. </B>
+<B> *Note*: Typically, this would be further filtered/controlled by Group Policy but consider the steps for demo purposes. </B>
 
 
 <br />
