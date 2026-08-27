@@ -148,5 +148,12 @@ Install Active Directory, create a domain admin user within the domain forest, a
 
 </p>
 
+- Create a domain admin user within the domain forest (mydomain.com).
+- In Active Directory Users and Computers, create an Organizational Unit (OU) called "_EMPLOYEES".
+- Create a new OU called "_ADMINS" 
+- Create a new employee Jane Doe with the username "jane_admin" and chosen password. 
+- Add user to "Domain Admins" security group
+- Close Remote Desktop Connection to domain controller and login with "mydomain.com\jane_admin
+
 <br />
 
