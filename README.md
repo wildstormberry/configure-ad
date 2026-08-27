@@ -158,9 +158,12 @@ Install Active Directory, create a domain admin user within the domain forest, a
 <img width="777" height="437" alt="P-Add Admin User To Security Grp" src="https://github.com/user-attachments/assets/c0012df8-624c-4cd2-9281-fc75d1536f24" />
 
 </p>
-- Close Remote Desktop Connection to domain controller and login with "mydomain.com\jane_admin
 
+
+- Close Remote Desktop Connection to domain controller and login with "mydomain.com\jane_admin
 <p>
+
+  
   <img width="831" height="582" alt="Q-Login as Jane_Admin" src="https://github.com/user-attachments/assets/73e9bc5d-a53f-4409-ba24-a725236b0e9c" />
   
 </p>
