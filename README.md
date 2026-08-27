@@ -171,7 +171,18 @@ Install Active Directory, create a domain admin user within the domain forest, a
 
 The above step is to create dedicated administrator account(s) on the domain controller server to access for daily task. 
 
+- Join client VM to the mydomain.com forest.
 
+- Login to client VM as original local admin (labuser) and join it to the domain.
+- How? Right click on start button in client VM, select "System", then "Advanced system settings". 
+- Under the "computer name" tab, click "change", add the created forest domain "mydomain.com".
+- Confirm changes by entering the administrator "mydomain.com\jane_admin" credentials.
+
+
+<p> 
+<img width="632" height="695" alt="R-Join Client VM to Forest Domain" src="https://github.com/user-attachments/assets/2d85453e-dd87-46f5-a22c-a174e112ed79" />
+
+</p>
 
 <br />
 
