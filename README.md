@@ -42,7 +42,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 </p>
 
 
-- Second, create a virtual network (VNet) and subnet. Assign the VNet to the recently created resource group. Name and save it, using the same time zone as the assigned resource group.
+- Create a virtual network (VNet) and subnet. Assign the VNet to the recently created resource group. Name and save it, using the same time zone as the assigned resource group.
 
 
 <p> <img width="1550" height="447" alt="B-Create Vnet w Subnet" src="https://github.com/user-attachments/assets/31330f32-447a-428f-a7e6-0614968a0e0e" />
