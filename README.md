@@ -146,6 +146,8 @@ Install Active Directory, create a domain admin user within created/designated d
 <p>
 <img width="1132" height="641" alt="N-Create New Forest Domain" src="https://github.com/user-attachments/assets/35426eb9-44cd-4d0c-ab4f-3bbf26458e81" />
 
+
+<B> *Note* Figure above shows "whateverdomain.com" but should be "mydomain.com" for demo consistency purposes. </B>
 </p>
 
 - Create a domain admin user within the domain forest (mydomain.com).
