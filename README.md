@@ -183,5 +183,13 @@ Install Active Directory, create a domain admin user within the domain forest, a
 
 </p>
 
+- Login to the domain controller as jane_admin and very client VM shows up in Active Directory Users and Computers. 
+- Create a new OU named "_CLIENTS" and assign client VM to it.
+
+<p>
+<img width="882" height="677" alt="S-Drag client VM to CLIENTS " src="https://github.com/user-attachments/assets/449d67e6-2c05-4090-9adb-5adb54002d90" />
+
+</p>
+
 <br />
 
