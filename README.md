@@ -153,6 +153,7 @@ Install Active Directory, create a domain admin user within the domain forest, a
 - Create a new OU called "_ADMINS" 
 - Create a new employee Jane Doe with the username "jane_admin" and chosen password. 
 - Add user to "Domain Admins" security group
+- Always create dedicated administrator account(s) on the domain controller server to access and use for daily task. 
 
 <p>
 <img width="777" height="437" alt="P-Add Admin User To Security Grp" src="https://github.com/user-attachments/assets/c0012df8-624c-4cd2-9281-fc75d1536f24" />
@@ -168,8 +169,6 @@ Install Active Directory, create a domain admin user within the domain forest, a
   
 </p>
 
-
-The above step is to create dedicated administrator account(s) on the domain controller server to access for daily task. 
 
 - Join client VM to the mydomain.com forest.
 
