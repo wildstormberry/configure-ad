@@ -33,6 +33,10 @@ Step 1:
 
 Set up a resource group and virtual network/subnet specifically for the Active Directory environment in Azure.
 
+<p>
+<B>Set up resource group in Azure.<B/>  
+</p>
+
 - In a registered Azure subscription account, start on the home page and use the search bar to find Azure's resources and services.
 - Type, "resource groups" to navigate to the Resource groups page. (This page is found within the "Resource Manager" page.) Resource groups are created for the purpose of housing and organizing all resources that will be used within a given virtual deployment. In this case, this resource group will be assigned to the Active Directory deployment.
 - Click the "Create" button to create a new resource group. Name the resource group "Active Directory" and select the appropriate time zone. (Time zone should likely correspond to the location of users that will be created in the Active Directory deployment.)
@@ -65,7 +69,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
 Step 2: 
 
-Set up domain controller (DC) and client virtual machines. The domain controller VM will act as the server for Active Directory, and the client VM will be used to test the deployment. 
+Set up domain controller (DC) and client virtual machines. The domain controller VM will act as the server for Active Directory, and the client VM will be used to test the deployment. The virtual server that will be used for  
 
 - First, create the domain controller VM. Assign the same recently created resource group to the VM. Name the virtual machine and set the time zone to the same as the resource group's. Set the "Image" of the VM to "Windows Server 2025 DataCenter Azure Edition" and select an appropriate size.
 
