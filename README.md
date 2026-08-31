@@ -140,9 +140,34 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
   
 
-<p> 
-  <img width="1147" height="717" alt="C-Create DC-2-VM" src="https://github.com/user-attachments/assets/28ffae7a-5f0e-4839-b1e2-4bedd41d2468" />
-<img width="1032" height="676" alt="D-DC-2 Image Select" src="https://github.com/user-attachments/assets/4dbf4df2-a890-4677-9813-fdbb17ee9985" />
+<p>
+<img width="982" height="657" alt="2-Setting Up VM via ComputeInfra" src="https://github.com/user-attachments/assets/a56b99a3-6d1c-4ff8-b52c-a400f5a3bc13" />  
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="732" height="737" alt="3-Select VM via Comp Infra" src="https://github.com/user-attachments/assets/0e9558f5-7c27-4fd0-b86a-3140c15dd7c1" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1382" height="702" alt="4-Inside Comp Infra" src="https://github.com/user-attachments/assets/d4cb6d5f-00f7-4d4b-a1e0-5e04340b04e6" />
+
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    <img width="1370" height="752" alt="5-Creating a VM step 1" src="https://github.com/user-attachments/assets/5d13339f-861a-4ccb-8580-7fdc7c70e855" />
+
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   <img width="1090" height="672" alt="6-Assgn Resrce Grp to VM" src="https://github.com/user-attachments/assets/c3f65c8f-c6d9-4815-8153-981e1f35c7da" />
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1232" height="907" alt="7-Name and Zone VM" src="https://github.com/user-attachments/assets/b6c73c36-3aec-4195-9022-f4f0f8dfebb7" />
+
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+  
 
 </p>
 
