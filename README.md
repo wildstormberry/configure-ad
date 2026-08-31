@@ -206,7 +206,7 @@ ________________________________________________________________________________
 - In this demo, the Client VM will be used to test the connectivity and accuracy of the Active Directory deployment. The Active Directory software and resources will be downloaded and deployed on the DC-1 domain controller using the Server Manager within the virtual machine server. 
 - As a shortcut, start in the search bar and type in "virtual machines" and navigate to the virtual machines page.
 - Create a new virtual machine by clicking the "Create" button (classic VM, not VMSS for the demo).
-- To appropriately design the client, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
+- To appropriately design the Client VM, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
 - Set the "resource group" to the "Active-Directory" group that was created in the previous step.
 - Name the virtual machine "client-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
 - For this virtual machine, Windows 11 Pro, Version 25H2 x64 was used as the VM's image/operating system.
