@@ -195,7 +195,10 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
 <img width="1647" height="817" alt="15-Inside DC1 VM " src="https://github.com/user-attachments/assets/a9414202-468b-4fc8-9f4d-5ee54277cd71" />
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+</p><br/>
+
+___________________________________________________________________________________________________________________________________________________________________
+
 
 <img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
 
