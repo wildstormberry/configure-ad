@@ -35,7 +35,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
 <p>
 <B>Set up resource group in Azure.<B/>  
-</p>
+</p><br/>
 
 - In a registered Azure subscription account, start on the home page and use the search bar to find Azure's resources and services.
 - Type, "resource groups" to navigate to the Resource groups page. (This page is found within the "Resource Manager" page.) Resource groups are created for the purpose of housing and organizing all resources that will be used within a given virtual deployment. In this case, this resource group will be assigned to the Active Directory deployment.
