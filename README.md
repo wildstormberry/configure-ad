@@ -83,7 +83,8 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - Assign the VNet to the recently created resource group.
 - Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.)
 - Leave all the other settings under the different tabs set to default (Security, Address Space, etc.) 
-- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile. (Click virtual network's or any resource's name to view its content.)<br/>
+- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile.
+- Refresh the screen to return to the virtual networks page to view the Vnet. (Click virtual network's or any resource's name to view its content.)<br/>
 
 <p>
   <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" />
@@ -136,7 +137,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
 - Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
 - Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
-- Review + Create the virtual machine and finalize with the blue "Create" button.
+- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
 - Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
   
 
@@ -198,7 +199,11 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 </p><br/>
 
 ___________________________________________________________________________________________________________________________________________________________________
+<p>
+<B>Set up Client VM using a virtual machine in Azure.<B/>  
+</p><br/>
 
+- As a shortcut, start in the search bar and type in "virtual machines". 
 
 <img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
 
