@@ -133,7 +133,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - Name the virtual machine "DC-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
 - For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
 - Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
-- Under the Administrator account section, use an appropriate admin username and password that will be the authorized administrator for the domain controller VM.
+- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
 - Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
 - Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
 - Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
@@ -203,7 +203,20 @@ ________________________________________________________________________________
 <B>Set up Client VM using a virtual machine in Azure.<B/>  
 </p><br/>
 
-- As a shortcut, start in the search bar and type in "virtual machines". 
+- In this demo, the Client VM will be used to test the connectivity and accuracy of the Active Directory deployment. The Active Directory software and resources will be downloaded and deployed on the DC-1 domain controller using the Server Manager within the virtual machine server. 
+- As a shortcut, start in the search bar and type in "virtual machines" and navigate to the virtual machines page.
+- Create a new virtual machine by clicking the "Create" button (classic VM, not VMSS for the demo).
+- To appropriately design the client, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
+- Set the "resource group" to the "Active-Directory" group that was created in the previous step.
+- Name the virtual machine "client-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
+- For this virtual machine, Windows 11 Pro, Version 25H2 x64 was used as the VM's image/operating system.
+- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
+- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
+- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
+- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
+- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
+- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
 
 <img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
 
