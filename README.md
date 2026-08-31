@@ -133,7 +133,10 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
 - Under the Administrator account section, use an appropriate admin username and password that will be the authorized administrator for the domain controller VM.
 - Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
-- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet. 
+- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
+- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
+- Review + Create the virtual machine and finalize with the blue "Create" button.
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
   
 
 <p> 
