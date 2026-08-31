@@ -149,31 +149,31 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  <img width="1382" height="702" alt="4-Inside Comp Infra" src="https://github.com/user-attachments/assets/d4cb6d5f-00f7-4d4b-a1e0-5e04340b04e6" />
+<img width="1382" height="702" alt="4-Inside Comp Infra" src="https://github.com/user-attachments/assets/d4cb6d5f-00f7-4d4b-a1e0-5e04340b04e6" />
 
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    <img width="1370" height="752" alt="5-Creating a VM step 1" src="https://github.com/user-attachments/assets/5d13339f-861a-4ccb-8580-7fdc7c70e855" />
+<img width="1370" height="752" alt="5-Creating a VM step 1" src="https://github.com/user-attachments/assets/5d13339f-861a-4ccb-8580-7fdc7c70e855" />
 
-   -------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   <img width="1090" height="672" alt="6-Assgn Resrce Grp to VM" src="https://github.com/user-attachments/assets/c3f65c8f-c6d9-4815-8153-981e1f35c7da" />
+<img width="1090" height="672" alt="6-Assgn Resrce Grp to VM" src="https://github.com/user-attachments/assets/c3f65c8f-c6d9-4815-8153-981e1f35c7da" />
 
-      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  <img width="1232" height="907" alt="7-Name and Zone VM" src="https://github.com/user-attachments/assets/b6c73c36-3aec-4195-9022-f4f0f8dfebb7" />
+<img width="1232" height="907" alt="7-Name and Zone VM" src="https://github.com/user-attachments/assets/b6c73c36-3aec-4195-9022-f4f0f8dfebb7" />
 
    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1460" height="832" alt="8-Select Image for DC-1 VM" src="https://github.com/user-attachments/assets/214b4da9-88cd-42e2-8cef-9ee03fd54c7d" />
 
-   -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   <img width="1492" height="757" alt="9-Image Sizing DC-1 VM" src="https://github.com/user-attachments/assets/b2799d4f-73b8-4a5b-8295-f943009c0ab8" />
+<img width="1492" height="757" alt="9-Image Sizing DC-1 VM" src="https://github.com/user-attachments/assets/b2799d4f-73b8-4a5b-8295-f943009c0ab8" />
 
  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
- <img width="1042" height="737" alt="10-Image Sizing DC-1 VM2" src="https://github.com/user-attachments/assets/00f16e46-97be-4b10-883a-2b281e813d69" />
+<img width="1042" height="737" alt="10-Image Sizing DC-1 VM2" src="https://github.com/user-attachments/assets/00f16e46-97be-4b10-883a-2b281e813d69" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -181,11 +181,11 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-  <img width="1186" height="902" alt="12-DC1 VM ADVnet Routing" src="https://github.com/user-attachments/assets/395f5480-465b-490e-9c86-ef6581436f7a" />
+<img width="1186" height="902" alt="12-DC1 VM ADVnet Routing" src="https://github.com/user-attachments/assets/395f5480-465b-490e-9c86-ef6581436f7a" />
 
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-  <img width="1221" height="921" alt="13-Review Create DC1 VM" src="https://github.com/user-attachments/assets/57fc538e-3979-409a-9270-3224c0ca567f" />
+<img width="1221" height="921" alt="13-Review Create DC1 VM" src="https://github.com/user-attachments/assets/57fc538e-3979-409a-9270-3224c0ca567f" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -220,6 +220,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 <img width="1321" height="940" alt="21-Review Create Client VM" src="https://github.com/user-attachments/assets/9ee6ffad-17c2-4e72-ac4d-fbc45b42c7f4" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
 <br/>
 
 Turn off domain controller's Windows Firewall to test connectivity.
