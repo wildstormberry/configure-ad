@@ -120,7 +120,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
 
 <p>
-<B>Set up Domain Controller using a virtual server in Azure.<B/>  
+<B>Set up Domain Controller using a virtual machine server in Azure.<B/>  
 </p><br/>
 
 - In the search bar in Azure, type "compute infrastructure" and select it in the drop-down selection to navigate to its page.
