@@ -116,9 +116,25 @@ ________________________________________________________________________________
 
 Step 2: 
 
-Set up domain controller (DC) and client virtual machines. The domain controller VM will act as the server for Active Directory, and the client VM will be used to test the deployment. The virtual server that will be used for  
+Set up domain controller (DC) and client virtual machines (VM). The domain controller VM will act as the server for Active Directory, and the client VM will be used to test the deployment of the Active Directory set up.  
 
-- First, create the domain controller VM. Assign the same recently created resource group to the VM. Name the virtual machine and set the time zone to the same as the resource group's. Set the "Image" of the VM to "Windows Server 2025 DataCenter Azure Edition" and select an appropriate size.
+<p>
+<B>Set up Domain Controller using a virtual server in Azure.<B/>  
+</p><br/>
+
+- In the search bar in Azure, type "compute infrastructure" and select it in the drop-down selection to navigate to its page.
+- On the side panel menu, click the "Infrastructure" tab and select "Virtual machines".
+- From the virtual machines page, select "Create" to design a new virtual machine that will be used as the domain controller server for the Active Directory deployment.
+- Azure has the option to select a classic virtual machine or a virtual machine scale set (VMSS). In this demo, I'll be using a classic virtual machine which can later be attached to a VMSS if needed.
+- To appropriately design the domain controller, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
+- Set the "resource group" to the "Active-Directory" group that was created in the previous step.
+- Name the virtual machine "DC-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
+- For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
+- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
+- Under the Administrator account section, use an appropriate admin username and password that will be the authorized administrator for the domain controller VM.
+- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
+- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet. 
+  
 
 <p> 
   <img width="1147" height="717" alt="C-Create DC-2-VM" src="https://github.com/user-attachments/assets/28ffae7a-5f0e-4839-b1e2-4bedd41d2468" />
