@@ -29,6 +29,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 
 ______________________________________________________________________________________________________________________________________________________________________
+
+
 Step 1: 
 
 Set up a resource group and virtual network/subnet specifically for the Active Directory environment in Azure.
@@ -46,7 +48,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 <p>
   <img width="970" height="362" alt="1-AD Home Page - Finding Resources" src="https://github.com/user-attachments/assets/0431d6ce-c079-4708-9d7a-ffc27062a834" />
 
- <h3></h3>
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
   
   <img width="962" height="506" alt="2-Find Resource Groups Mngr" src="https://github.com/user-attachments/assets/cb5c2e63-19a2-48c8-80ce-427a2d9a78b7" />
 
