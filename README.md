@@ -88,13 +88,23 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 <p>
   <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" />
 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   <img width="1072" height="596" alt="8-Select Virtual Network" src="https://github.com/user-attachments/assets/0c00b55c-95cb-4d97-a957-62fdf1fcdf7e" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="1375" height="691" alt="9-Inside Virtual Network" src="https://github.com/user-attachments/assets/498645b0-2697-46a7-821a-e62de0509668" />
 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   <img width="1057" height="835" alt="10-Name Create Virtual Network" src="https://github.com/user-attachments/assets/4681fe00-7249-4b15-b1bf-c25f6fe0de4a" />
 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="1592" height="517" alt="12-Proof of Vnet and Subnet" src="https://github.com/user-attachments/assets/5083f142-cd25-4439-a122-281481c8f577" />
 
