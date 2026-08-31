@@ -54,7 +54,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
   <img width="547" height="825" alt="4-Name Review Create Resource Group" src="https://github.com/user-attachments/assets/6a89b90f-7f9e-44ab-bfc1-061d5176b9b2" />
 
-  <img width="1366" height="437" alt="5-Proof of RsrceGrp" src="https://github.com/user-attachments/assets/0db689a6-65f2-42d6-a2ba-cd0818949346" />
+  <img width="1366" height="437" alt="5-Proof of RsrceGrp" src="https://github.com/user-attachments/assets/0db689a6-65f2-42d6-a2ba-cd0818949346" /><br/>
 
   
 </p>
@@ -68,28 +68,23 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - Assign the VNet to the recently created resource group.
 - Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.)
 - Leave all the other settings under the different tabs set to default (Security, Address Space, etc.) 
-- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile. (Click virtual network's or any resource's name to view its content.)
+- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile. (Click virtual network's or any resource's name to view its content.)<br/>
 
 <p>
-  <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" /><br/>
+  <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" />
 
-  <img width="1072" height="596" alt="8-Select Virtual Network" src="https://github.com/user-attachments/assets/0c00b55c-95cb-4d97-a957-62fdf1fcdf7e" /><br/>
+  <img width="1072" height="596" alt="8-Select Virtual Network" src="https://github.com/user-attachments/assets/0c00b55c-95cb-4d97-a957-62fdf1fcdf7e" />
 
-  <img width="1375" height="691" alt="9-Inside Virtual Network" src="https://github.com/user-attachments/assets/498645b0-2697-46a7-821a-e62de0509668" /><br/>
+  <img width="1375" height="691" alt="9-Inside Virtual Network" src="https://github.com/user-attachments/assets/498645b0-2697-46a7-821a-e62de0509668" />
 
-  <img width="1057" height="835" alt="10-Name Create Virtual Network" src="https://github.com/user-attachments/assets/4681fe00-7249-4b15-b1bf-c25f6fe0de4a" /><br/>
+  <img width="1057" height="835" alt="10-Name Create Virtual Network" src="https://github.com/user-attachments/assets/4681fe00-7249-4b15-b1bf-c25f6fe0de4a" />
 
-  <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" /><br/>
+  <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" />
 
-  <img width="1592" height="517" alt="12-Proof of Vnet and Subnet" src="https://github.com/user-attachments/assets/5083f142-cd25-4439-a122-281481c8f577" /><br/>
-
-
+  <img width="1592" height="517" alt="12-Proof of Vnet and Subnet" src="https://github.com/user-attachments/assets/5083f142-cd25-4439-a122-281481c8f577" />
 
 
-
-
-
-</p>
+</p><br/>
 
 
 Step 2: 
