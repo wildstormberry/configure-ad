@@ -118,6 +118,7 @@ Step 2:
 
 Set up domain controller (DC) and client virtual machines (VM). The domain controller VM will act as the server for Active Directory, and the client VM will be used to test the deployment of the Active Directory set up.  
 
+
 <p>
 <B>Set up Domain Controller using a virtual server in Azure.<B/>  
 </p><br/>
