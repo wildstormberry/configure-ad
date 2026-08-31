@@ -33,12 +33,25 @@ Step 1:
 
 Set up a resource group and virtual network/subnet specifically for the Active Directory environment in Azure.
 
-- First, in a registered Azure subscription, create, name, select the proper time zone, and save a resource group that will house all resources that will be used for the Active Directory environment. These resources include virtual machines, virtual networks/subnets, virtual network interface cards, network security groups, etc.
+- In a registered Azure subscription account, start on the home page and use the search bar to find Azure's resources and services.
+- Type, "resource groups" to navigate to the Resource groups page. (This page is found within the "Resource Manager" page.) Resource groups are created for the purpose of housing and organizing all resources that will be used within a given virtual deployment. In this case, this resource group will be assigned to the Active Directory deployment.
+- Click the "Create" button to create a new resource group. Name the resource group "Active Directory" and select the appropriate time zone. (Time zone should likely correspond to the location of users that will be created in the Active Directory deployment.)
+- Select "Review + Create" and finalize to create the resource group. 
 
 <p>
+  <img width="970" height="362" alt="1-AD Home Page - Finding Resources" src="https://github.com/user-attachments/assets/0431d6ce-c079-4708-9d7a-ffc27062a834" />
   
-<img width="907" height="887" alt="A-Create ResourceGrp " src="https://github.com/user-attachments/assets/96aae6ab-0ebd-4801-a86c-0bf6cd2266d5" />
+  <img width="962" height="506" alt="2-Find Resource Groups Mngr" src="https://github.com/user-attachments/assets/cb5c2e63-19a2-48c8-80ce-427a2d9a78b7" />
 
+  <img width="1241" height="706" alt="3-Create Resource Group" src="https://github.com/user-attachments/assets/167e5365-5f83-467d-8741-c12399cd0799" />
+
+  <img width="1035" height="536" alt="4 1-Name-Region Resource Grp" src="https://github.com/user-attachments/assets/aa5cab6b-e30b-49a0-8bfb-eadf57835f3e" />
+
+  <img width="547" height="825" alt="4-Name Review Create Resource Group" src="https://github.com/user-attachments/assets/6a89b90f-7f9e-44ab-bfc1-061d5176b9b2" />
+
+  <img width="1366" height="437" alt="5-Proof of RsrceGrp" src="https://github.com/user-attachments/assets/0db689a6-65f2-42d6-a2ba-cd0818949346" />
+
+  
 </p>
 
 
