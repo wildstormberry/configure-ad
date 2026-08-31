@@ -165,36 +165,62 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<img width="1460" height="832" alt="8-Select Image for DC-1 VM" src="https://github.com/user-attachments/assets/214b4da9-88cd-42e2-8cef-9ee03fd54c7d" />
 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  
+   <img width="1492" height="757" alt="9-Image Sizing DC-1 VM" src="https://github.com/user-attachments/assets/b2799d4f-73b8-4a5b-8295-f943009c0ab8" />
 
-</p>
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+ <img width="1042" height="737" alt="10-Image Sizing DC-1 VM2" src="https://github.com/user-attachments/assets/00f16e46-97be-4b10-883a-2b281e813d69" />
 
-- Enter appropriate credentials under the "Administrator account" section. Make sure the selected inbound port is set to RDP 3389. Scroll down and check the box to confirm licensing. *Do not save just yet.*
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-<p> 
-  <img width="1192" height="745" alt="C-DC-2 Admin credentials" src="https://github.com/user-attachments/assets/8332aece-12f7-42d6-b7e2-95cc03f7c691" />
+<img width="1165" height="910" alt="11-Admin Credentials DC1 VM" src="https://github.com/user-attachments/assets/e2788ea2-c5a3-49ed-9e30-e6ddc34d9463" />
 
-</p>
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+  <img width="1186" height="902" alt="12-DC1 VM ADVnet Routing" src="https://github.com/user-attachments/assets/395f5480-465b-490e-9c86-ef6581436f7a" />
 
-- Under the "Networking" tab, set the virtual network and subnet to the Vnet and subnet previously created. Now you can save/create the domain controller virtual machine.
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-<p> <img width="1122" height="547" alt="E-DC-2 Networking Vnet Settings" src="https://github.com/user-attachments/assets/26f82643-409a-414f-ab66-f6f31a7f3b86" />
+  <img width="1221" height="921" alt="13-Review Create DC1 VM" src="https://github.com/user-attachments/assets/57fc538e-3979-409a-9270-3224c0ca567f" />
 
-</p>
-</p>
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+<img width="1212" height="547" alt="14-Create VM Shortcut" src="https://github.com/user-attachments/assets/a64c5c9a-c9f4-4624-ba53-c4e30a6a67f9" />
 
-- After domain controller VM is created, set the NIC private IP address to "static".
-    
-<p>
-  <img width="1760" height="882" alt="F-DC-2 Networking Settings - Static NIC" src="https://github.com/user-attachments/assets/a1755ee8-bbbc-4965-af64-d05d6da5fc2f" />
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-</p>
+<img width="1647" height="817" alt="15-Inside DC1 VM " src="https://github.com/user-attachments/assets/a9414202-468b-4fc8-9f4d-5ee54277cd71" />
 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1221" height="917" alt="17-Select Client VM Image and Size" src="https://github.com/user-attachments/assets/e4501682-f0fa-4708-a34f-025a1799156c" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1360" height="926" alt="18-Admin Crdntials Client VM" src="https://github.com/user-attachments/assets/7e095576-7e1f-43e7-a0f5-c89eee223555" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1222" height="906" alt="19-License Agreement Check" src="https://github.com/user-attachments/assets/3ba9fa57-384b-4ffe-8fec-5a1719cb1345" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1222" height="921" alt="20-Networking Settings Client VM" src="https://github.com/user-attachments/assets/0338705c-c801-4f79-a081-bd5a36344ccb" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<img width="1321" height="940" alt="21-Review Create Client VM" src="https://github.com/user-attachments/assets/9ee6ffad-17c2-4e72-ac4d-fbc45b42c7f4" />
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------  
+<br/>
 
 Turn off domain controller's Windows Firewall to test connectivity.
 - Go to Remote Desktop Connection to connect to the domain controller VM using its public IP address and administrator account credentials.
