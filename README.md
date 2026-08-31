@@ -45,8 +45,12 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
 <p>
   <img width="970" height="362" alt="1-AD Home Page - Finding Resources" src="https://github.com/user-attachments/assets/0431d6ce-c079-4708-9d7a-ffc27062a834" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
   
   <img width="962" height="506" alt="2-Find Resource Groups Mngr" src="https://github.com/user-attachments/assets/cb5c2e63-19a2-48c8-80ce-427a2d9a78b7" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="1241" height="706" alt="3-Create Resource Group" src="https://github.com/user-attachments/assets/167e5365-5f83-467d-8741-c12399cd0799" />
 
