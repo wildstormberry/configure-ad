@@ -40,6 +40,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 -  In a registered Azure subscription account, start on the home page and use the search bar to find Azure's resources and services.
 -  Type, "resource groups" to navigate to the Resource groups page. (This page is found within the "Resource Manager" page.) Resource groups are created for the purpose of housing and organizing all resources that will be used within a given virtual deployment. In this case, this resource group will be assigned to the Active Directory deployment.
 -  Click the "Create" button to create a new resource group. Name the resource group "Active Directory" and select the appropriate time zone. (Time zone should likely correspond to the location of users that will be created in the Active Directory deployment.)
+-  You can use tags for organizing purposes but it is not necessary for demo purposes.
 -  Select "Review + Create" and finalize to create the resource group. It will take a few seconds but creating the resource group, you should see its existence within the Resource Manager.
 
 <p>
@@ -65,7 +66,8 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - On the side panel of the Network foundation page, select "Virtual networks" under the "Virtual network" drop-down tab. 
 - Create a new virtual network (VNet).
 - Assign the VNet to the recently created resource group.
-- Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.) 
+- Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.)
+- Leave all the other settings under the different tabs set to default (Security, Address Space, etc.) 
 - Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile. (Click virtual network's or any resource's name to view its content.)
 
 <p>
