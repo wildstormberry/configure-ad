@@ -129,7 +129,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - From the virtual machines page, select "Create" to design a new virtual machine that will be used as the domain controller server for the Active Directory deployment.
 - Azure has the option to select a classic virtual machine or a virtual machine scale set (VMSS). In this demo, I'll be using a classic virtual machine which can later be attached to a VMSS if needed.
 - To appropriately design the domain controller, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
-- Set the "resource group" to the "Active-Directory" group that was created in the previous step.
+- Set the resource group to the "Active-Directory" group that was created in the previous step.
 - Name the virtual machine "DC-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
 - For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
 - Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
@@ -207,7 +207,7 @@ ________________________________________________________________________________
 - As a shortcut, start in the search bar and type in "virtual machines" and navigate to the virtual machines page.
 - Create a new virtual machine by clicking the "Create" button (classic VM, not VMSS for the demo).
 - To appropriately design the Client VM, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
-- Set the "resource group" to the "Active-Directory" group that was created in the previous step.
+- Set the resource group to the "Active-Directory" group that was created in the previous step.
 - Name the virtual machine "client-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
 - For this virtual machine, Windows 11 Pro, Version 25H2 x64 was used as the VM's image/operating system.
 - Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
