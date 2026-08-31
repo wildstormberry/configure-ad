@@ -242,7 +242,14 @@ ________________________________________________________________________________
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-<br/>
+<p>
+</p><br/>
+
+___________________________________________________________________________________________________________________________________________________________________
+
+
+<B>Side Step: Set up and test connectivity between DC-1 and client-1 VMs.<B/> 
+
 
 Turn off domain controller's Windows Firewall to test connectivity.
 - Go to Remote Desktop Connection to connect to the domain controller VM using its public IP address and administrator account credentials.
