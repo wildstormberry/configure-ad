@@ -70,8 +70,10 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
   
 </p>
-<p>
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+<p>
 <B>Set up virtual network with subnet in Azure.<B/>  
 </p><br/>
 
