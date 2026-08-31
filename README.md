@@ -57,12 +57,35 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
   
 </p>
+<p>
+<B>Set up virtual network with subnet in Azure.<B/>  
+</p><br/>
+
+- In the search bar, type "network foundation" and select it from the drop-down selection.
+- On the side panel of the Network foundation page, select "Virtual networks" under the "Virtual network" drop-down tab. 
+- Create a new virtual network (VNet).
+- Assign the VNet to the recently created resource group.
+- Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.) 
+- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile. (Click virtual network's or any resource's name to view its content.)
+
+<p>
+  <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" /><br/>
+
+  <img width="1072" height="596" alt="8-Select Virtual Network" src="https://github.com/user-attachments/assets/0c00b55c-95cb-4d97-a957-62fdf1fcdf7e" /><br/>
+
+  <img width="1375" height="691" alt="9-Inside Virtual Network" src="https://github.com/user-attachments/assets/498645b0-2697-46a7-821a-e62de0509668" /><br/>
+
+  <img width="1057" height="835" alt="10-Name Create Virtual Network" src="https://github.com/user-attachments/assets/4681fe00-7249-4b15-b1bf-c25f6fe0de4a" /><br/>
+
+  <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" /><br/>
+
+  <img width="1592" height="517" alt="12-Proof of Vnet and Subnet" src="https://github.com/user-attachments/assets/5083f142-cd25-4439-a122-281481c8f577" /><br/>
 
 
-- Create a virtual network (VNet) and subnet. Assign the VNet to the recently created resource group. Name and save it, using the same time zone as the assigned resource group.
 
 
-<p> <img width="1550" height="447" alt="B-Create Vnet w Subnet" src="https://github.com/user-attachments/assets/31330f32-447a-428f-a7e6-0614968a0e0e" />
+
+
 
 </p>
 
