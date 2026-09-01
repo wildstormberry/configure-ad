@@ -261,7 +261,7 @@ This is a two-part process that involves configuring the domain controller's (DC
 - Within client-1, on the side panel menu, under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
 - Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
 - Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
-- These steps are to ensure that the deployment between future authorized users who will be able to access client-1 VM by way of the Active Directory deployment in DC-1.
+
 
 
 
