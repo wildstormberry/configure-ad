@@ -282,9 +282,6 @@ This is a two-part process that involves configuring the domain controller's (DC
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<img width="1527" height="597" alt="5-DC1-PrivateIPAddy" src="https://github.com/user-attachments/assets/0740e802-86d4-4273-b92c-27be616b1930" />
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1376" height="920" alt="6-client1-DNS config" src="https://github.com/user-attachments/assets/8a5f8bea-9440-48f0-8156-d548af22c8d8" />
 
