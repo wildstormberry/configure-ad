@@ -248,145 +248,29 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________________________________
 
 
-<B>Side Step: Set up and test connectivity between DC-1 and client-1 VMs.<B/> 
+<B>Sidestep: Configure settings for consistent connectivity between DC-1 and client-1 VMs.<B/> 
 
+This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that they are mapped to DC-1's private IP address. 
 
-Turn off domain controller's Windows Firewall to test connectivity.
-- Go to Remote Desktop Connection to connect to the domain controller VM using its public IP address and administrator account credentials.
-- Once logged into the domain controller VM, right click on the Windows "start" button and click "Run".
-- Type in "wf.msc" to pull up Windows Firewall. Click on "Windows Defender Properties", set firewall state to "off" under each profile, then apply and save.
+- To configure DC-1's IP settings, navigate to the "compute infrastructure-virtual machines" page in Azure and click on the DC-1 VM.
+- Within DC-1, on the side panel menu, under the "Networking" tab, click on "Network settings".
+- In the "network interface/ip configuration" box on the top, click on the "dc-1637/ipconfig1" link to go inside and configure the NIC.
+- Near the bottom of the page, click on the "ipconfig1" link and set private IP address settings to "static" and click "Save".
+- After refreshing the screen, you should be able to see that the Private IP address is set to "static". The VM's private IP address should automatically populate in the text box. Copy this IP address to be used in client-1's DNS configuration.  
+- Navigate back to the "compute infrastructure-virtual machines" page and click on client-1 VM.
+- Within client-1, on the side panel menu, under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
+- Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
+- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
+- These steps are to ensure that the deployment between future authorized users who will be able to access client-1 VM by way of the Active Directory deployment in DC-1.
+
+Steps 1-2 with the above sidestep is the infrastructure stage of setting up virtual machines to be used by and with Active Directory. The last steps will show how to download Active Directory, properly deploy it within the cloud infrastructure, and using PowerShell to create authorized users who can login to the client-1 VM.   
 
 <p>
-  <img width="992" height="447" alt="H-DC VM Windows FW Off" src="https://github.com/user-attachments/assets/379c7806-9180-49b5-b72f-febc7b5fcb2c" />
-
 </p>
-
+___________________________________________________________________________________________________________________________________________________________________________________
   
-  - Second, create the client VM to test the deployment. Assign the same settings for each section as set in the domain controller previously created, except for the "Image" setting. Select "Windows 11, Pro Version 25H2" as the image and select the appropriate size. Assign the same VNet and subnet previously created to the client VM and save/create. 
-  
-  *Note* In a real world setting, the "Administrator account" credentials will and should be completely different from the credentials set in the domain controller.
 
 <p>
-<img width="1557" height="546" alt="J-Create ClientVM Windows 11 Pro" src="https://github.com/user-attachments/assets/9b861d71-8f09-40a0-85e1-42538125d1ce" />
-  
-</p>
-
-  After client VM is created, set DNS settings to the domain controller's private IP address.
-- Copy domain controller's private IP address, go to the client's VM network settings. Click network interface/ipconfiguration, DNS servers, and change to custom DNS servers and enter domain controller's private IP address.
-
-<p> 
-  <img width="1345" height="690" alt="K-Client VM DNS Settings" src="https://github.com/user-attachments/assets/d7ca65c8-06e5-4b77-aed3-12995e403e28" />
-
-</p>
-
-- From Azure, restart the client VM. Then, from Remote Desktop, login to client VM and attempt to "ping" the domain controller's private IP address. The output for the DNS settings should show the DC's private IP address. To find this, open PowerShell on the client VM and run ipconfig /all to retrieve info. Ping the IP address to ensure connectivity.
-
-<p>
-<img width="1196" height="880" alt="I-ClientVM Ipconfig Test" src="https://github.com/user-attachments/assets/b6691380-f7f6-4521-ba66-532bd3af318c" />
-
-</p>
-
-Step 3: 
-
-Install Active Directory, create a domain admin user within created/designated domain forest, and join client VM to the domain so that created users can access/login to client VM using the created forest domain.
-
-- Login to domain controller VM and install Active Directory Domain Services
-
-<p>
-  <img width="1066" height="781" alt="L-Install Active Directory" src="https://github.com/user-attachments/assets/a8b5c507-5949-4780-988e-9eb5312f9f29" />
-
-</p>
-
-- Promote as a "Domain Controller/DC"
-  
-- Set up a new "forest" as mydomain.com 
-- Restart the VM from the Remote Desktop Connection app then log back in to domain controller VM as username: mydomain.com\labuser with the same administrator account password.
-  
-<p>
-  <img width="1130" height="647" alt="M-Promote Server as DC" src="https://github.com/user-attachments/assets/8835267b-51c0-46ff-ab37-0ec3d1541bd9" />
-
-</p>
-
-<p>
-<img width="1132" height="641" alt="N-Create New Forest Domain" src="https://github.com/user-attachments/assets/35426eb9-44cd-4d0c-ab4f-3bbf26458e81" />
-
-
-<B> *Note*: Figure above shows "whateverdomain.com" but should be "mydomain.com" for demo consistency purposes. </B>
-</p>
-
-- Create a domain admin user within the domain forest (mydomain.com).
-- In Active Directory Users and Computers, create an Organizational Unit (OU) called "_EMPLOYEES".
-- Create a new OU called "_ADMINS" 
-- Create a new employee Jane Doe with the username "jane_admin" and chosen password. 
-- Add user to "Domain Admins" security group
-- Always create dedicated administrator account(s) on the domain controller server to access and use for daily task. 
-
-<p>
-<img width="777" height="437" alt="P-Add Admin User To Security Grp" src="https://github.com/user-attachments/assets/c0012df8-624c-4cd2-9281-fc75d1536f24" />
-
-</p>
-
-
-- Close Remote Desktop Connection to domain controller and login with "mydomain.com\jane_admin
-<p>
-
-  
-  <img width="831" height="582" alt="Q-Login as Jane_Admin" src="https://github.com/user-attachments/assets/73e9bc5d-a53f-4409-ba24-a725236b0e9c" />
-  
-</p>
-
-
-- Join client VM to the mydomain.com forest.
-
-- Login to client VM as original local admin (labuser) and join it to the domain.
-- How? Right click on start button in client VM, select "System", then "Advanced system settings". 
-- Under the "computer name" tab, click "change", add the created forest domain "mydomain.com".
-- Confirm changes by entering the administrator "mydomain.com\jane_admin" credentials.
-
-
-<p> 
-<img width="632" height="695" alt="R-Join Client VM to Forest Domain" src="https://github.com/user-attachments/assets/2d85453e-dd87-46f5-a22c-a174e112ed79" />
-
-</p>
-
-- Login to the domain controller as jane_admin and very client VM shows up in Active Directory Users and Computers. 
-- Create a new OU named "_CLIENTS" and assign client VM to it.
-
-<p>
-<img width="882" height="677" alt="S-Drag client VM to CLIENTS " src="https://github.com/user-attachments/assets/449d67e6-2c05-4090-9adb-5adb54002d90" />
-
-</p>
-
-Step 4: Create Users and set up client VM for non-admin users (Remote Desktop for demo purposes)
-
-- Log into client VM as mydomain.com\jane_admin (authz'd admin).
-- Configure system settings to allow selected domain groups access to remote desktop/client VM.
-- This allows authorized users within a given group to access a selected VM. 
-
-<p>
-  <img width="1007" height="775" alt="T-RemoteDesktop for Non-Admin on ClientVM" src="https://github.com/user-attachments/assets/1b94faed-95c1-4861-b823-234ed73b2fe7" />
-
-</p>
-
-<B> *Note*: Typically, this would be further filtered/controlled by Group Policy but consider the steps for demo purposes. </B>
-<p>
-
-- Create additional users to have access to VM using PowerShell from the domain controller.
-- Login to the domain controller as authz'd admin (jane_admin).
-- Open Windows PowerShell ISE and run as administrator.
-- Create a new file, then paste and run given script into it (will include initial user passwords).
-- Open ADUC to observe created accounts in the appropriate OU folder.
-</p>
-
-<p>
-<img width="1001" height="542" alt="U-Observe User Creation" src="https://github.com/user-attachments/assets/969ef132-8056-4e57-9f22-4e99152435d2" />
-  
-</p>
-
-- Test login into client VM with any given user to affirm deployment.
-
-<p>
-<img width="1115" height="605" alt="V-Test New User Login" src="https://github.com/user-attachments/assets/8332abcc-42e3-43a9-ba49-8379456a96ef" />
 
 </p>
 <br />
