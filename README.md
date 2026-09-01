@@ -138,7 +138,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 - Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
 - Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
 - Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
-- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/>
   
 
 <p>
@@ -216,7 +216,7 @@ ________________________________________________________________________________
 - Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
 - Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
 - Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
-- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page. 
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/> 
 
 <img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
 
@@ -260,7 +260,7 @@ This is a two-part process that involves configuring the domain controller's (DC
 - Navigate back to the "compute infrastructure-virtual machines" page and click on client-1 VM.
 - Within client-1, on the side panel menu, under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
 - Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
-- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
+- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.<br/>
 
 
 
@@ -337,7 +337,8 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - Enter a Directory Services Restore Mode (DSRM) password that would be used by the authorized admin only. For this demo, the password is "Password1".
 - Uncheck "Create DNS delegation" on "DNS Options" page. Click "next" to the "Additional options" page where the NetBIOS domain name will automatically populate, then click "next".
 - Click "next" through the "paths" and "review options" pages. Once on the "prerequisite check" page, if all steps above were properly followed, the prerequisite check should be successful. Then click "install".
-- After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.
+- After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.<br/>
+
 
 <p>
   <img width="1717" height="512" alt="1-Copy VMs Public IP Addresses " src="https://github.com/user-attachments/assets/62fd5d00-3ee6-4508-918d-ac2e8bf6ea01" />
