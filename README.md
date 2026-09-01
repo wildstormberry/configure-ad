@@ -310,7 +310,7 @@ Install Active Directory (AD), create a domain admin user within domain forest &
 A forest is a group of related AD domains under one overall directory system and is an administrative boundary that enforces and prioritizes security. 
 Active Directory will be installed on the domain controller (DC-1) via the Server Manager program that comes preinstalled on Windows Server 2025.<br/>
 
-Before deployment, it's important to "promote" the server to actually be recognized as the domain controller. Naming a server "domain controller" doesn't automatically make it a domain controller. It must be promoted. To perform installation and promotion on the server and to join client-1 VM to the forest, use Remote Desktop Connection application from the host computer (usually preinstalled on Windows) to login to either of the VMs using their respective PUBLIC IP addresses. 
+Before deployment, it's important to "promote" the server to actually be recognized as the domain controller. Naming a server "domain controller" doesn't automatically make it a domain controller. It must be promoted. To perform installation and promotion on the server and to join client-1 VM to the forest, use Remote Desktop Connection application from the host computer (usually preinstalled on Windows) to login to either of the VMs using their respective PUBLIC IP addresses.<br/>
 
 <p>
 <B>Install Active Directory on DC-1 and promote server to domain controller via the Server Manager.<B/>  
