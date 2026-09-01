@@ -323,4 +323,10 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - Windows Security will ask for credentials, likely using the host computer username, which needs to be fixed because the goal is to login as "labuser" admin to access DC-1 server.
 - Click the "More choices" link, click "Use a different account" and enter the admin credentials used to create the DC-1 virtual machine server and click "ok". For demo purposes, the admin username is "labuser" and the password is "Cyberworld123!" (click yes, and/or exit out of any popup window).
 - These steps should permit the user access into DC-1 virtual machine server, which Active Directory will be installed on.
-- 
+- While in DC-1, navigate to and open "Server Manager" by typing the name in the Windows "Start" search bar.
+- In the Server Manager dashboard, under "Configure this local server", click "Add roles and features".
+- Follow the prompts as follows: Click "next" from the "Before you begin" page to "Installation type" and select "role-based or featured based".
+- On the "Server selection" page, select DC-1 from the server pool and click "next".
+- For "Server roles", click "Active Directory Domain Services" and click "Add features".
+- Click "next" through the "features", "AD DS" and "Confirm install" pages. Click "Restart after install" box and install Active Directory.
+- After a successful install, proof of Active Directory Domain Services will be displayed on the Server Manager dashboard as "AS DS". 
