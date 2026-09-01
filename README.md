@@ -314,7 +314,7 @@ Before deployment, it's important to "promote" the server to actually be recogni
 
 <p>
 <B>Install Active Directory on DC-1 and promote server to domain controller via the Server Manager.<B/>  
-</p><br/>
+</p>
 
 - In Azure, go to the Virtual Machines page, then locate and copy the public IP addresses of DC-1 and client-1 to be used with Remote Desktop Connection. (Use notepad or notes app to paste the IP addresses for reference purposes.)
 - Then, on the host computer, open the Remote Desktop Connection app. Right click on the "Start" icon, select "Run" and type in mstsc.exe to open Remote Desktop or search for it by name in the Windows "Start" search bar.
