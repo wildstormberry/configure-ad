@@ -329,4 +329,8 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - On the "Server selection" page, select DC-1 from the server pool and click "next".
 - For "Server roles", click "Active Directory Domain Services" and click "Add features".
 - Click "next" through the "features", "AD DS" and "Confirm install" pages. Click "Restart after install" box and install Active Directory.
-- After a successful install, proof of Active Directory Domain Services will be displayed on the Server Manager dashboard as "AS DS". 
+- After a successful install, proof of Active Directory Domain Services will be displayed on the Server Manager dashboard as "AS DS".
+- Next, promote DC-1 to domain controller from the Server Manager. On the top corner of Server Manager is a flag with a caution alert icon.
+- Click on the flag alert and click "Promote this server as domain controller".
+- From here, the Active Directory Domain Services configuration wizard window will guide the installation.
+- On the "deployment configuration" page, select "Add new forest". For demo purposes, "mydomain.com" is used as the root domain name. 
