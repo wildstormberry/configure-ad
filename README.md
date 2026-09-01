@@ -337,7 +337,10 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - Enter a Directory Services Restore Mode (DSRM) password that would be used by the authorized admin only. For this demo, the password is "Password1".
 - Uncheck "Create DNS delegation" on "DNS Options" page. Click "next" to the "Additional options" page where the NetBIOS domain name will automatically populate, then click "next".
 - Click "next" through the "paths" and "review options" pages. Once on the "prerequisite check" page, if all steps above were properly followed, the prerequisite check should be successful. Then click "install".
-- After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.<br/>
+- After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.
+- Restart and then log back into DC-1 as username: mydomain.com\labuser with the same admin credentials password. (Password123!)<br/>
+
+______________________________________________________________________________________________________________________________________________________
 
 
 <p>
