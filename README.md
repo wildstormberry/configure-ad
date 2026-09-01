@@ -263,11 +263,39 @@ This is a two-part process that involves configuring the domain controller's (DC
 - Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
 - These steps are to ensure that the deployment between future authorized users who will be able to access client-1 VM by way of the Active Directory deployment in DC-1.
 
-Steps 1-2 with the above sidestep is the infrastructure stage of setting up virtual machines to be used by and with Active Directory. The last steps will show how to download Active Directory, properly deploy it within the cloud infrastructure, and using PowerShell to create authorized users who can login to the client-1 VM.   
+
 
 <p>
+<img width="1667" height="887" alt="1-DC1-Network settings" src="https://github.com/user-attachments/assets/89f30f6b-890d-409f-bd61-ccd2a8662173" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1897" height="912" alt="2-DC1-NIC-Static" src="https://github.com/user-attachments/assets/44f8c3ff-a665-4ba2-894a-2c934f4f052f" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1780" height="787" alt="3-DC1-Proof of Static Private IP " src="https://github.com/user-attachments/assets/b2965807-8b8d-4cfb-bbca-a6d0aa7f2f6c" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1832" height="860" alt="4-client1-Network settings" src="https://github.com/user-attachments/assets/00df4de6-6598-4939-8b1e-003324dfe56a" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1527" height="597" alt="5-DC1-PrivateIPAddy" src="https://github.com/user-attachments/assets/0740e802-86d4-4273-b92c-27be616b1930" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1376" height="920" alt="6-client1-DNS config" src="https://github.com/user-attachments/assets/8a5f8bea-9440-48f0-8156-d548af22c8d8" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 </p>
-___________________________________________________________________________________________________________________________________________________________________________________
+<br/>
+
+<p> Steps 1-2 with the above sidestep is the infrastructure stage of setting up virtual machines to be used by and with Active Directory. The last steps will show how to download Active Directory, properly deploy it within the cloud infrastructure, and using PowerShell to create authorized users who can login to the client-1 VM. </p><br/> 
+
+_________________________________________________________________________________________________________________________________________________
   
 
 <p>
