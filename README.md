@@ -333,4 +333,9 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - Next, promote DC-1 to domain controller from the Server Manager. On the top corner of Server Manager is a flag with a caution alert icon.
 - Click on the flag alert and click "Promote this server as domain controller".
 - From here, the Active Directory Domain Services configuration wizard window will guide the installation.
-- On the "deployment configuration" page, select "Add new forest". For demo purposes, "mydomain.com" is used as the root domain name. 
+- On the "deployment configuration" page, select "Add new forest". For demo purposes, "mydomain.com" is used as the root domain name.
+- Enter a Directory Services Restore Mode (DSRM) password that would be used by the authorized admin only. For this demo, the password is "Password1".
+- Uncheck "Create DNS delegation" on "DNS Options" page. Click "next" to the "Additional options" page where the NetBIOS domain name will automatically populate, then click "next".
+- Click "next" through the "paths" and "review options" pages. Once on the "prerequisite check" page, if all steps above were properly followed, the prerequisite check should be successful. Then click "install".
+- After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.
+
