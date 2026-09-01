@@ -314,4 +314,4 @@ Active Directory will be installed on the domain controller (DC-1) via the Serve
 - In the Remote Desktop window, enter the public IP address of DC-1 in the "computer" text bar and press "connect".
 - Windows Security will ask for credentials, likely using the host computer username, which needs to be fixed because the goal is to login as "labuser" admin to access DC-1 server.
 - Click the "More choices" link, click "Use a different account" and enter the admin credentials used to create the DC-1 virtual machine server and click "ok". For demo purposes, the admin username is "labuser" and the password is "Cyberworld123!" (click yes, and/or exit out of any popup window).
-- These steps should permit the user access into the create DC-1 virtual machine server, which Active Directory will be installed on. 
+- These steps should permit the user access into DC-1 virtual machine server, which Active Directory will be installed on. 
