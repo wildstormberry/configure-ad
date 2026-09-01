@@ -299,4 +299,19 @@ ________________________________________________________________________________
 
 </p>
 <br />
+Step 1: 
 
+Step 3: Install Active Directory (AD), create a domain admin user within domain forest & join client VM to the forest. 
+A forest is a group of related AD domains under one overall directory system and is an administrative boundary that enforces and prioritizes security. 
+Active Directory will be installed on the domain controller (DC-1) via the Server Manager program that comes preinstalled on Windows Server 2025. Before deployment, it's important to "promote" the server to actually be recognized as the domain controller. Naming a server "domain controller" doesn't automatically make it a domain controller. It must be promoted. To perform installation and promotion on the server and to join client-1 VM to the forest, use Remote Desktop Connection application from the host computer (usually preinstalled on Windows) to login to either of the VMs using their respective PUBLIC IP addresses. 
+
+<p>
+<B>Install Active Directory on DC-1 and promote server to domain controller via the Server Manager.<B/>  
+</p><br/>
+
+- In Azure, go to the Virtual Machines page, then locate and copy the public IP addresses of DC-1 and client-1 to be used with Remote Desktop Connection. (Use notepad or notes app to paste the IP addresses for reference purposes.)
+- Then, on the host computer, open the Remote Desktop Connection app. Right click on the "Start" icon, select "Run" and type in mstsc.exe to open Remote Desktop or search for it by name in the Windows "Start" search bar.
+- In the Remote Desktop window, enter the public IP address of DC-1 in the "computer" text bar and press "connect".
+- Windows Security will ask for credentials, likely using the host computer username, which needs to be fixed because the goal is to login as "labuser" admin to access DC-1 server.
+- Click the "More choices" link, click "Use a different account" and enter the admin credentials used to create the DC-1 virtual machine server and click "ok". For demo purposes, the admin username is "labuser" and the password is "Cyberworld123!" (click yes, and/or exit out of any popup window).
+- These steps should permit the user access into the create DC-1 virtual machine server, which Active Directory will be installed on. 
