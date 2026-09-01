@@ -339,3 +339,52 @@ Before deployment, it's important to "promote" the server to actually be recogni
 - Click "next" through the "paths" and "review options" pages. Once on the "prerequisite check" page, if all steps above were properly followed, the prerequisite check should be successful. Then click "install".
 - After a successful install, DC-1 will restart to give the virtual machine time to catch up to the new installations.
 
+<p>
+  <img width="1717" height="512" alt="1-Copy VMs Public IP Addresses " src="https://github.com/user-attachments/assets/62fd5d00-3ee6-4508-918d-ac2e8bf6ea01" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="837" height="372" alt="2-Run RDC " src="https://github.com/user-attachments/assets/0a572dba-0e8d-4720-bd66-47da12be8c01" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="756" height="721" alt="3-DC1 IP Addr RemoteDsktp " src="https://github.com/user-attachments/assets/35cb304b-fb6c-4b3e-91c5-b4298a7784c9" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="655" height="782" alt="4-DC1 Login pt1" src="https://github.com/user-attachments/assets/b204594a-1e2b-4689-8d38-3f78fe08fa49" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="662" height="930" alt="5-AdminCredDC1" src="https://github.com/user-attachments/assets/57f070a0-ed2a-4edc-8dba-932dbd6ba659" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1191" height="842" alt="6- Open ServerManager" src="https://github.com/user-attachments/assets/62fca83c-7a53-4912-829b-4c8bda191ed5" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1326" height="977" alt="7-Addroleandfeatures step1" src="https://github.com/user-attachments/assets/79d80d79-7d2d-4ac1-88ff-91db2ab82fd4" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1335" height="975" alt="8-install type role features" src="https://github.com/user-attachments/assets/89ceab02-28a8-471f-a217-fc1111f81d1d" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1331" height="961" alt="9-Select servers DC1" src="https://github.com/user-attachments/assets/2af790f9-1c78-4c5a-bc44-97b1b2c76a1a" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1276" height="932" alt="10-AD Domain Services" src="https://github.com/user-attachments/assets/b230d3b0-34b4-4de3-831f-a1de8e263f41" />
+
+  
+
+
+
+
+
+
+
+
+</p>
