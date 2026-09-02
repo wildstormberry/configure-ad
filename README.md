@@ -461,7 +461,7 @@ ________________________________________________________________________________
 - Create another new OU called "_ADMINS". After its creation, right click on _ADMINS and create a new user named "Jane Doe" with the username "jane_admin" and password "Cyberworld123!".
 - Add jane_admin to the "Domain Admins" security group by right clicking on Jane Doe's name and clicking "add to group".
 - Type in Domain Admins and check the name, then click "Ok" to add Jane Doe to Domain Admins security group.
-- Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password.
+- Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password. (Check account via right click on Windows "Start" and click "Systems" to see details of the virtual machine.
 - These steps demonstrate creating an administrator user of the domain controller who has access to manipulate Active Directory.
 
 
@@ -514,5 +514,7 @@ ________________________________________________________________________________
 
 </p>
 <br/>
+
+
 
 
