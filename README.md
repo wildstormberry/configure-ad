@@ -457,3 +457,4 @@ ________________________________________________________________________________
 - Add jane_admin to the "Domain Admins" security group by right clicking on Jane Doe's name and clicking "add to group".
 - Type in Domain Admins and check the name, then click "Ok" to add Jane Doe to Domain Admins security group.
 - Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password.
+- These steps demonstrate creating an administrator user of the domain controller who has access to manipulate Active Directory.
