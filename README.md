@@ -441,7 +441,12 @@ ________________________________________________________________________________
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
+  <img width="621" height="756" alt="25- mydomain com-labuser login" src="https://github.com/user-attachments/assets/38e4168c-d64e-4c49-9b69-43e01ee1f915" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
   
+
 
 </p>
 <br/>
@@ -458,3 +463,55 @@ ________________________________________________________________________________
 - Type in Domain Admins and check the name, then click "Ok" to add Jane Doe to Domain Admins security group.
 - Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password.
 - These steps demonstrate creating an administrator user of the domain controller who has access to manipulate Active Directory.
+
+
+<p>
+  <img width="1232" height="862" alt="26-Open ADUC " src="https://github.com/user-attachments/assets/1009d4a4-b36c-470c-890d-d0eb3396b7a0" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1182" height="882" alt="27-Create New OU " src="https://github.com/user-attachments/assets/8e4875d8-bba0-4f63-a05f-1b9a62bba36b" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1212" height="832" alt="28- OU _EMPL" src="https://github.com/user-attachments/assets/7e3935ea-885a-49f9-b14b-999fb2e9d86b" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1197" height="812" alt="29-Create New Admin User" src="https://github.com/user-attachments/assets/0bea50be-633b-48df-b3d0-3445dfe642d4" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1241" height="792" alt="29-OU _ADMINS" src="https://github.com/user-attachments/assets/9a9d0b0e-b99a-40d9-a1d0-1a57d5db9280" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1212" height="811" alt="30-Jane_Admin_passwd" src="https://github.com/user-attachments/assets/a9709d2b-e5fa-4d98-8b26-9d0ab45c472d" />
+
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1161" height="846" alt="31-Add Jane To Grp" src="https://github.com/user-attachments/assets/5f4dfaf8-515c-4ff0-a80e-ee7e2444a819" />
+
+  
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1232" height="867" alt="32-Add Jane Domain Grp" src="https://github.com/user-attachments/assets/722f6dee-b7f6-4808-a4e1-a0615b68a9fc" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+  
+
+
+  <img width="1215" height="830" alt="33-Proof of Grpship" src="https://github.com/user-attachments/assets/e74c0d91-34b7-4aeb-add9-29f3730396f5" />
+
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  <img width="1166" height="841" alt="34-Proof of Jane_Admin Login DC1" src="https://github.com/user-attachments/assets/2a2c1aa8-3b29-4b14-9d82-3d94042267dd" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+</p>
