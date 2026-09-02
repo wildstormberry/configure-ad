@@ -441,32 +441,19 @@ ________________________________________________________________________________
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-
   
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
 
 </p>
+<br/>
+
+<p>
+<B>Create a domain admin user within the new forest domain .<B/>  
+</p>
+<br/>
+
+- After logging back into DC-1 as "mydomain.com\labuser", open Active Directory Users and Computers (ADUC) from the Windows "Start" search bar.
+- In ADUC, right click the domain forest "mydomain.com" and create a new Organizational Unit (OU) called "_EMPLOYEES"
+- Create another new OU called "_ADMINS". After its creation, right click on _ADMINS and create a new user named "Jane Doe" with the username "jane_admin" and password "Cyberworld123!".
+- Add jane_admin to the "Domain Admins" security group by right clicking on Jane Doe's name and clicking "add to group".
+- Type in Domain Admins and check the name, then click "Ok" to add Jane Doe to Domain Admins security group.
+- Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password.
