@@ -601,4 +601,10 @@ ________________________________________________________________________________
 
 
 
+<p>
+  
+Step 4: Set up Remote Desktop in client-1 VM for non-admin users to access and create new users routed to mydomain.com AD forest domain.
+</p>
+ <br/>
+
 
