@@ -609,7 +609,7 @@ Step 4:Set up Remote Desktop for non-admin users to access client-1 VM and creat
 
 In these steps, we'll see how to enable remote desktop for non-administrative authorized users to access client-1 VM. Then once the configuration is complete, we'll create users to be added to the forest domain we created in Active Directory by running a coded script in Windows PowerShell ISE. 
 
-<B>Set up Remote Desktop for non-admin users<B/>
+<B>Set up Remote Desktop for non-admin users.<B/>
 
 - Login to client-1 as mydomain.com\jane_admin, open system systems and navigate to "Remote Desktop" page and click "Remote Desktop users".
 - Click "Add" and enter "domain users" (a group within AD) and apply settings. Logout of client-1 as jane_admin.
@@ -619,11 +619,59 @@ In these steps, we'll see how to enable remote desktop for non-administrative au
 
   <img width="1077" height="910" alt="1-system remote desktop settings" src="https://github.com/user-attachments/assets/00ac2d9a-5c48-49d1-aac1-61ac94868c47" />
 
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
   <img width="1210" height="782" alt="2-add user groups to remote desktop" src="https://github.com/user-attachments/assets/9b51aad9-d81e-4d51-a6c4-8240848d5680" />
 
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
   <img width="1015" height="772" alt="3-domain users added proof" src="https://github.com/user-attachments/assets/5dc0807e-57da-49a9-922c-323c3660fb22" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 </p>
 <br/>
+
+<B>Create new users using Windows PowerShell ISE.<B/>
+
+- Login to DC-1 as jane_admin, navigate to Windows PowerShell ISE and run as administrator.
+- Create a new file, name and save it, then paste the coded script and "run" the script.
+- Next, open ADUC and verify created users within mydomain.com forest under the "_EMPLOYEES" organizational unit.
+- Attempt to login with one of the new users to confirm proper configuration. <br/>
+
+<p>
+
+  <img width="1097" height="950" alt="4-open powershell ISE " src="https://github.com/user-attachments/assets/811ed8ee-ff44-4205-960c-a20a9791ec9f" />
+  
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1066" height="722" alt="5-insert script AD " src="https://github.com/user-attachments/assets/86968187-6abd-459e-9bb2-82f1111f0b21" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1062" height="702" alt="6-run script " src="https://github.com/user-attachments/assets/d8c6f874-b885-49b1-9feb-13a394ec23f7" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1112" height="832" alt="7-Created Users" src="https://github.com/user-attachments/assets/eefd1cc9-8723-4839-bff8-12c6c57f7355" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1136" height="847" alt="8-AD added users in domain" src="https://github.com/user-attachments/assets/ed901706-b1b7-4e65-9367-85c99eab0a10" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="620" height="726" alt="9-login as non-admin" src="https://github.com/user-attachments/assets/5e28459a-9658-45fe-b21e-3e65832bbb29" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <img width="1031" height="807" alt="10-Proof of Non-admin login" src="https://github.com/user-attachments/assets/6110f8ee-6db0-4e15-85f9-2b8b016ee6f2" />
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+</p>
+
 
