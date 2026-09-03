@@ -677,7 +677,7 @@ In these steps, we'll see how to enable remote desktop for non-administrative au
 
 <p>
 
-  This demonstration shows a high-level step-by-step overview in how to set up the virtual infrastructure for Active Directory deployment. It's important to properly configure all settings while creating virtual machines, virtual networks, and the software used on the respective VMs, as it all directs the way systems behave. In real-world scenarios, there will be some security changes with technicalities such as the addition of group policy which a Windows feature used to centrally managed and configure operating systems, applications and user settings in an Active Directory environment. 
+  This demonstration shows a high-level step-by-step overview in how to set up the virtual infrastructure for Active Directory deployment. It's important to properly configure all settings while creating virtual machines, virtual networks, and the software used on the respective VMs, as it all directs the way systems behave. In real-world scenarios, there will likely be some security changes in technicalities such as the addition of Group Policy, which is a Windows feature used to centrally manage and configure operating systems, applications and user settings in an Active Directory environment. 
 </p>
 
 
