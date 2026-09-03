@@ -502,7 +502,7 @@ ________________________________________________________________________________
 - Add jane_admin to the "Domain Admins" security group by right clicking on Jane Doe's name and clicking "add to group".
 - Type in Domain Admins and check the name, then click "Ok" to add Jane Doe to Domain Admins security group.
 - Logout of DC-1 as mydomain.com\labuser and log back in as "mydomain.com\jane_admin" with "Cyberworld123!" as the password. (Check system account by right clicking on Windows "Start" and click "Systems" to see details of the virtual machine.)
-- These steps demonstrate creating an administrator user of the domain controller who has access to manipulate Active Directory.
+- These steps demonstrate creating an administrator user of the domain controller who has access to manipulate Active Directory.<br/>
 
 
 <p>
@@ -564,7 +564,41 @@ ________________________________________________________________________________
 <br/>
 
 - Login to client-1 VM as the original "labuser" user and join the VM to mydomain.com forest. 
-- Right click Window's "Start" menu, select "System". Select 
+- Right click Window's "Start" menu, select "System". Click "Advanced system settings".
+- Click "Change" to change the VM's/computer's domain, then enter "mydomain.com" and add it as the domain. When prompted, enter for Jane Doe's domain admin credentials (mydomain.com\jane_admin, Cyberworld123!).
+- This step will welcome client-1 VM to join the AD domain created in DC-1 server.
+- Confirm that client-1 is recognized as a computer system within ADUC under the "computers" tab of "mydomain.com" domain forest.<br/>
+
+<p>
+
+<img width="1270" height="930" alt="35-client1 system menu" src="https://github.com/user-attachments/assets/12765746-588f-4291-b5c8-34ac11f0ac19" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="877" height="771" alt="36-Advanced system settings" src="https://github.com/user-attachments/assets/4ca03017-d356-48b6-87a5-b1830bee7c3e" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1002" height="932" alt="37-system properties " src="https://github.com/user-attachments/assets/f2307121-a40e-4500-8ed3-b27db7dac4b5" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1255" height="957" alt="38-join client-1 to domain controller" src="https://github.com/user-attachments/assets/314de323-b76c-4a05-8452-a6f7aa81404d" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1110" height="837" alt="39-welcome to domain - confirmation" src="https://github.com/user-attachments/assets/c3269028-871c-4c40-9fdc-e3eeb7243818" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1057" height="915" alt="40-verify client-1 joined mydomain " src="https://github.com/user-attachments/assets/637cee03-a30c-476c-b534-8ef22ce0f7a2" />
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+  
+</p>
+<br/>
+
 
 
 
