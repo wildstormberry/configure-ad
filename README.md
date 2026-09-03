@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1: Set up a resource group and virtual network/subnet in Azure.
 - Step 2: Set up domain controller (DC) and client virtual machines. 
 - Step 3: Install Active Directory, create a domain admin user within new domain forest & join client VM to the forest.
-- Step 4: Step 4: Create Users and set up client VM for non-admin users (Remote Desktop for demo purposes)
+- Step 4: Step 4: Set up Remote Desktop for non-admin users to access client-1 VM and create users in PowerShell ISE. 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -603,8 +603,27 @@ ________________________________________________________________________________
 
 <p>
   
-Step 4: Set up Remote Desktop in client-1 VM for non-admin users to access and create new users routed to mydomain.com AD forest domain.
+Step 4:Set up Remote Desktop for non-admin users to access client-1 VM and create users in PowerShell ISE from the domain controller.
 </p>
  <br/>
 
+In these steps, we'll see how to enable remote desktop for non-administrative authorized users to access client-1 VM. Then once the configuration is complete, we'll create users to be added to the forest domain we created in Active Directory by running a coded script in Windows PowerShell ISE. 
+
+<B>Set up Remote Desktop for non-admin users<B/>
+
+- Login to client-1 as mydomain.com\jane_admin, open system systems and navigate to "Remote Desktop" page and click "Remote Desktop users".
+- Click "Add" and enter "domain users" (a group within AD) and apply settings. Logout of client-1 as jane_admin.
+- Now, any authorized user that is within the "domain users" forest domain will have non-administrative access to login to client-1 VM. <br/>
+
+<p>
+
+  <img width="1077" height="910" alt="1-system remote desktop settings" src="https://github.com/user-attachments/assets/00ac2d9a-5c48-49d1-aac1-61ac94868c47" />
+
+  <img width="1210" height="782" alt="2-add user groups to remote desktop" src="https://github.com/user-attachments/assets/9b51aad9-d81e-4d51-a6c4-8240848d5680" />
+
+  <img width="1015" height="772" alt="3-domain users added proof" src="https://github.com/user-attachments/assets/5dc0807e-57da-49a9-922c-323c3660fb22" />
+
+
+</p>
+<br/>
 
