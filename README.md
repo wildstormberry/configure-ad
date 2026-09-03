@@ -250,7 +250,7 @@ ________________________________________________________________________________
 
 <B>Sidestep: Configure settings for consistent connectivity between DC-1 and client-1 VMs.<B/> 
 
-This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that it is mapped to DC-1's private IP address. The default of the virtual network for both DC-1 and client-1 is mapped so that client-1 going to Azure's Vnet DNS server, but the following steps will map client-1 to the domain controller, DC-1. So, whenever client-1 needs to look up any domain, i.e. microsoft.com, it will look to DC-1 server. Also, these steps allow client-1 VM to join the forest domain in later steps.
+This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that it is mapped to DC-1's private IP address. The default of the virtual network for both DC-1 and client-1 is mapped so that client-1 going to Azure's Vnet DNS server, but the following steps will map client-1 to the domain controller, DC-1. So, whenever client-1 needs to look up any domain, i.e. microsoft.com, it will look to DC-1 server. Also, these steps allow client-1 VM to join the forest domain in later steps. On DC-1, turn the Windows Firewall state to "off" to test DNS connectivity between the two VMs.
 
 - To configure DC-1's IP settings, navigate to the "compute infrastructure-virtual machines" page in Azure and click on the DC-1 VM.
 - Within DC-1, on the side panel menu, under the "Networking" tab, click on "Network settings".
@@ -260,7 +260,16 @@ This is a two-part process that involves configuring the domain controller's (DC
 - Navigate back to the "compute infrastructure-virtual machines" page and click on client-1 VM.
 - Within client-1, on the side panel menu, under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
 - Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
-- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.<br/>
+- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
+  
+- <br/>
+
+- Login to DC-1 server using admin credentials (labuser, Cyberworld123!) right click on Windows "Start" menu, and select "Run" and enter "wf.msc" to open Windows Defender firewall.
+- Navigate and click "Windows Defender Firewall Properties".
+- Turn the firewall state for each profile - domain profile, private profile, public profile - to "off". Apply and confirm the settings.
+- Login to client-1 VM using admin credentials, open Windows PowerShell to run as administrator, and ping DC-1's private IP address (10.0.0.4).
+- Using the "ping" bash in PowerShell to call to/connect to DC-1 will show that the NIC configuration settings were properly stored and client-1 will look to DC-1's DNS server when searching for a domain or ip address.
+- Last, in client-1's PowerShell, run the command "ipconfig /all" to display full details of every NIC on the host VM. You will see that the DNS server recognized is the private IP address of DC-1 VM.<br/>
 
 
 
@@ -286,6 +295,37 @@ This is a two-part process that involves configuring the domain controller's (DC
 <img width="1376" height="920" alt="6-client1-DNS config" src="https://github.com/user-attachments/assets/8a5f8bea-9440-48f0-8156-d548af22c8d8" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1252" height="950" alt="24-DC1-Windows firewall on" src="https://github.com/user-attachments/assets/97dc514e-b422-4de1-920c-afa7b4815223" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1280" height="917" alt="25-Windows firewall properties" src="https://github.com/user-attachments/assets/fdc71393-55aa-43b5-a04f-500ed83ea58f" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1070" height="916" alt="26-Windows firewall profile state" src="https://github.com/user-attachments/assets/f95cefdd-3bec-4c92-931e-4076c906e8d5" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1257" height="931" alt="27-DC1 Windows FW off" src="https://github.com/user-attachments/assets/88d61cdb-38f4-425c-aeb9-58dbac642981" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<img width="1367" height="970" alt="28-client1-powershell " src="https://github.com/user-attachments/assets/09e5a75b-0510-4a51-9d63-5a963b5dcd2f" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1221" height="852" alt="29-client1-ping dc1 private ip" src="https://github.com/user-attachments/assets/7cd9e2a4-d376-4923-a303-7b4b62ac939e" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<img width="1247" height="932" alt="30-client1 ipconfig all" src="https://github.com/user-attachments/assets/2eb13e75-2396-4005-a6f9-9cbb7a192fb3" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 </p>
 <br/>
@@ -452,7 +492,7 @@ ________________________________________________________________________________
 <br/>
 
 <p>
-<B>Create a domain admin user within the new forest domain .<B/>  
+<B>Create a domain admin user within the new forest domain.<B/>  
 </p>
 <br/>
 
@@ -515,6 +555,16 @@ ________________________________________________________________________________
 </p>
 <br/>
 
+</p>
+<br/>
+
+<p>
+<B>Join client-1 to the domain forest.<B/>  
+</p>
+<br/>
+
+- Login to client-1 VM as the original "labuser" user and join the VM to mydomain.com forest. 
+- Right click Window's "Start" menu, select "System". Select 
 
 
 
