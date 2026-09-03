@@ -250,7 +250,7 @@ ________________________________________________________________________________
 
 <B>Sidestep: Configure settings for consistent connectivity between DC-1 and client-1 VMs.<B/> 
 
-This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that it is mapped to DC-1's private IP address. The connectivity will be tested in the later steps. 
+This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that it is mapped to DC-1's private IP address. The default of the virtual network for both DC-1 and client-1 is mapped so that client-1 going to Azure's Vnet DNS server, but the following steps will map client-1 to the domain controller, DC-1. So, whenever client-1 needs to look up any domain, i.e. microsoft.com, it will look to DC-1 server. Also, these steps allow client-1 VM to join the forest domain in later steps.
 
 - To configure DC-1's IP settings, navigate to the "compute infrastructure-virtual machines" page in Azure and click on the DC-1 VM.
 - Within DC-1, on the side panel menu, under the "Networking" tab, click on "Network settings".
