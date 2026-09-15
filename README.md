@@ -132,8 +132,8 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <p>
-  - For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
-- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
+- For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
+- For demo purposes, the selected size of the VM is 2vCPU, 8GB RAM, with 10 data disks.
 
 </p>
 
