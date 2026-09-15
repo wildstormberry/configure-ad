@@ -267,6 +267,16 @@ This is a two-part process that involves configuring the domain controller's (DC
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<p>
+
+- Navigate back to the "compute infrastructure-virtual machines" page and click on client-1 VM.
+- Within client-1, on the side panel menu under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
+- Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
+- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
+
+
+</p>
+
 <img width="1832" height="860" alt="4-client1-Network settings" src="https://github.com/user-attachments/assets/00df4de6-6598-4939-8b1e-003324dfe56a" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -275,6 +285,12 @@ This is a two-part process that involves configuring the domain controller's (DC
 <img width="1376" height="920" alt="6-client1-DNS config" src="https://github.com/user-attachments/assets/8a5f8bea-9440-48f0-8156-d548af22c8d8" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p>
+
+- Using the Remote Desktop Connection app on host computer, login to DC-1 server using admin credentials (labuser, Cyberworld123!). 
+
+</p>
 
 <img width="1252" height="950" alt="24-DC1-Windows firewall on" src="https://github.com/user-attachments/assets/97dc514e-b422-4de1-920c-afa7b4815223" />
 
