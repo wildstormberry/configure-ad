@@ -73,10 +73,6 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - Create a new virtual network (VNet).
 - Assign the VNet to the recently created resource group.
 - Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.)
-- Leave all the other settings under the different tabs set to default (Security, Address Space, etc.) 
-- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile.
-- Refresh the screen to return to the virtual networks page to view the Vnet. (Click virtual network's or any resource's name to view its content.)<br/>
-
 <p>
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -90,6 +86,17 @@ Set up a resource group and virtual network/subnet specifically for the Active D
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" />
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  <p>
+- Leave all the other settings under the different tabs set to default (Security, Address Space, etc.) 
+- Review and create the virtual network. Upon its completion, it will automatically be assigned a subnet which can be found once you click on the virtual network's profile.
+- Refresh the screen to return to the virtual networks page to view the Vnet. (Click virtual network's or any resource's name to view its content.)<br/>
+
+  </p>
+
+    <img width="852" height="832" alt="11-Review Create Vnet" src="https://github.com/user-attachments/assets/ab8a2324-969c-4785-8ae6-7ce8172bb7ef" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
