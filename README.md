@@ -161,10 +161,12 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
 <p>
+  
 - Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
 - Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
 - Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
 - Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/>
+
 </p>
 
 <img width="1186" height="902" alt="12-DC1 VM ADVnet Routing" src="https://github.com/user-attachments/assets/395f5480-465b-490e-9c86-ef6581436f7a" />
