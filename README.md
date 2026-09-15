@@ -75,7 +75,9 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - Name the VNet "AD-Vnet" and select and use the same region that was used to create the "Active-Directory" resource group.</br>
 
 <p>
-  
+
+  <img width="1375" height="691" alt="9-Inside Virtual Network" src="https://github.com/user-attachments/assets/367363b6-d968-486c-971d-f041d6b3cde1" />
+
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="1057" height="835" alt="10-Name Create Virtual Network" src="https://github.com/user-attachments/assets/4681fe00-7249-4b15-b1bf-c25f6fe0de4a" />
