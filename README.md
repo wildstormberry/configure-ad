@@ -107,35 +107,17 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 <B>Set up Domain Controller using a virtual machine server in Azure.<B/>  
 </p><br/>
 
-- In the search bar in Azure, type "compute infrastructure" and select it in the drop-down selection to navigate to its page.
+- In Azure, navigate to the "Compute infrastructure" page 
 - On the side panel menu, click the "Infrastructure" tab and select "Virtual machines".
-- From the virtual machines page, select "Create" to design a new virtual machine that will be used as the domain controller server for the Active Directory deployment.
+- From the virtual machines page, create a new virtual machine that will be used as the domain controller server for the Active Directory deployment.
 - Azure has the option to select a classic virtual machine or a virtual machine scale set (VMSS). In this demo, I'll be using a classic virtual machine which can later be attached to a VMSS if needed.
 - To appropriately design the domain controller, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
-- Set the resource group to the "Active-Directory" group that was created in the previous step.
-- Name the virtual machine "DC-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
-- For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
-- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
-- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
-- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
-- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
-- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
-- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
-- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/>
+- Set the resource group "Active-Directory".
+- Name the virtual machine "DC-1" and match the region to the same region set to the "Active-Directory" resource group.
   
 
 <p>
-<img width="982" height="657" alt="2-Setting Up VM via ComputeInfra" src="https://github.com/user-attachments/assets/a56b99a3-6d1c-4ff8-b52c-a400f5a3bc13" />  
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-<img width="732" height="737" alt="3-Select VM via Comp Infra" src="https://github.com/user-attachments/assets/0e9558f5-7c27-4fd0-b86a-3140c15dd7c1" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-<img width="1382" height="702" alt="4-Inside Comp Infra" src="https://github.com/user-attachments/assets/d4cb6d5f-00f7-4d4b-a1e0-5e04340b04e6" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1370" height="752" alt="5-Creating a VM step 1" src="https://github.com/user-attachments/assets/5d13339f-861a-4ccb-8580-7fdc7c70e855" />
 
@@ -148,6 +130,12 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 <img width="1232" height="907" alt="7-Name and Zone VM" src="https://github.com/user-attachments/assets/b6c73c36-3aec-4195-9022-f4f0f8dfebb7" />
 
    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p>
+  - For the "Image" selection, Windows Server 2025 DataCenter: Azure Edition was used to operate the domain controller's system, which will later be used to configure and deploy Active Directory and Active Directory's proper resources.
+- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
+
+</p>
 
 <img width="1460" height="832" alt="8-Select Image for DC-1 VM" src="https://github.com/user-attachments/assets/214b4da9-88cd-42e2-8cef-9ee03fd54c7d" />
 
