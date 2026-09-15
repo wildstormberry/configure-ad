@@ -71,7 +71,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - In the search bar, type "network foundation" and select it from the drop-down selection.
 - On the side panel of the Network foundation page, select "Virtual networks" under the "Virtual network" drop-down tab. 
 - Create a new virtual network (VNet).
-- Assign the VNet to the recently created resource group.
+- Assign the VNet to the recently created resource group which is named "Active Directory".
 - Name the Vnet "AD-Vnet" and select the same region that was used to create the "Active-Directory" resource group. (Leave all other settings at default unless specified by management.)
 <p>
 
