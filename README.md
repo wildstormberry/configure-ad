@@ -194,30 +194,41 @@ ________________________________________________________________________________
 - To appropriately design the Client VM, set the subscription to the appropriate one. Many real-world scenarios involve organizations to have multiple accounts for different departments, projects, etc.
 - Set the resource group to the "Active-Directory" group that was created in the previous step.
 - Name the virtual machine "client-1" and match the region to the same region set to the "Active-Directory" resource group. For "Zone options" click "Self-selected zone".
-- For this virtual machine, Windows 11 Pro, Version 25H2 x64 was used as the VM's image/operating system.
-- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
-- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
-- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
-- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
-- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
-- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
-- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/> 
+
 
 <img width="1427" height="911" alt="16-Name Client1 VM with RGrp" src="https://github.com/user-attachments/assets/5690de1a-306e-4343-a8ef-8ffb45d52540" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+<p>
+
+- For this virtual machine, Windows 11 Pro, Version 25H2 x64 was used as the VM's image/operating system.
+- Selecting the size of the VM, a 2vCPU, 8GB RAM, with 10 data disks was appropriate for demonstration purposes.
+
+</p>
 <img width="1221" height="917" alt="17-Select Client VM Image and Size" src="https://github.com/user-attachments/assets/e4501682-f0fa-4708-a34f-025a1799156c" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<p>
+
+- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
+- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
+
+</p>
 
 <img width="1360" height="926" alt="18-Admin Crdntials Client VM" src="https://github.com/user-attachments/assets/7e095576-7e1f-43e7-a0f5-c89eee223555" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-<img width="1222" height="906" alt="19-License Agreement Check" src="https://github.com/user-attachments/assets/3ba9fa57-384b-4ffe-8fec-5a1719cb1345" />
+<p>
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------  
+- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
+- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
+- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.
+</p>
+<br/> 
 
 <img width="1222" height="921" alt="20-Networking Settings Client VM" src="https://github.com/user-attachments/assets/0338705c-c801-4f79-a081-bd5a36344ccb" />
 
