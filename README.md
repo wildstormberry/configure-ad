@@ -78,11 +78,6 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 - Refresh the screen to return to the virtual networks page to view the Vnet. (Click virtual network's or any resource's name to view its content.)<br/>
 
 <p>
-  <img width="966" height="672" alt="7-Network Foundation for VNet" src="https://github.com/user-attachments/assets/7dedc70e-9a82-4e72-a098-3c38291aa1e1" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  <img width="1072" height="596" alt="8-Select Virtual Network" src="https://github.com/user-attachments/assets/0c00b55c-95cb-4d97-a957-62fdf1fcdf7e" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
