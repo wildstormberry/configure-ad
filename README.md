@@ -149,9 +149,22 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+<p>
+- Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
+- Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
+
+</p>
+
 <img width="1165" height="910" alt="11-Admin Credentials DC1 VM" src="https://github.com/user-attachments/assets/e2788ea2-c5a3-49ed-9e30-e6ddc34d9463" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+<p>
+- Navigate to the "Networking" tab and under "Virtual network" section, assign the virtual network to the AD-Vnet network that was created in step 1, and set the subnet to match the subnet that was created with AD-Vnet.
+- Make sure the inbound port selection is set to RDP 3389 and leave all other settings at default, unless specified by management.
+- Review + Create the virtual machine and finalize with the blue "Create" button. (Periodically refresh screen after each resource/service's creation.)
+- Check the status and details of the VM once it has been deployed. After being created, the domain controller can be seen under the "Virtual Machines" page.<br/>
+</p>
 
 <img width="1186" height="902" alt="12-DC1 VM ADVnet Routing" src="https://github.com/user-attachments/assets/395f5480-465b-490e-9c86-ef6581436f7a" />
 
@@ -159,9 +172,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
 
 <img width="1221" height="921" alt="13-Review Create DC1 VM" src="https://github.com/user-attachments/assets/57fc538e-3979-409a-9270-3224c0ca567f" />
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-<img width="1212" height="547" alt="14-Create VM Shortcut" src="https://github.com/user-attachments/assets/a64c5c9a-c9f4-4624-ba53-c4e30a6a67f9" />
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
