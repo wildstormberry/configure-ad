@@ -150,6 +150,7 @@ Set up domain controller (DC) and client virtual machines (VM). The domain contr
   -------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
 <p>
+  
 - Under the "Administrator account" section, use an appropriate admin username (labuser) and password that will be the authorized administrator for the domain controller VM.
 - Make sure RDP 3389 (remote desktop protocol, TCP port 3389) is selected for inbound ports. Read and confirm to licensing agreement. Do not create VM just yet.
 
