@@ -288,8 +288,10 @@ This is a two-part process that involves configuring the domain controller's (DC
 
 <p>
 
-- Using the Remote Desktop Connection app on host computer, login to DC-1 server using admin credentials (labuser, Cyberworld123!). 
-
+- Using the Remote Desktop Connection app on host computer, login to DC-1 server using admin credentials (labuser, Cyberworld123!).
+- Right click on Windows "Start" menu, and select "Run" and enter "wf.msc" to open Windows Defender firewall.
+- Navigate and click "Windows Defender Firewall Properties".
+- Turn the firewall state for each profile - domain profile, private profile, public profile - to "off". Apply and confirm the settings.
 </p>
 
 <img width="1252" height="950" alt="24-DC1-Windows firewall on" src="https://github.com/user-attachments/assets/97dc514e-b422-4de1-920c-afa7b4815223" />
