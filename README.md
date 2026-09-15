@@ -53,12 +53,6 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
   <img width="1035" height="536" alt="4 1-Name-Region Resource Grp" src="https://github.com/user-attachments/assets/aa5cab6b-e30b-49a0-8bfb-eadf57835f3e" />
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  <img width="547" height="825" alt="4-Name Review Create Resource Group" src="https://github.com/user-attachments/assets/6a89b90f-7f9e-44ab-bfc1-061d5176b9b2" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 </p>
 
