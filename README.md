@@ -248,27 +248,11 @@ ________________________________________________________________________________
 
 This is a two-part process that involves configuring the domain controller's (DC-1) network interface card (NIC) private IP address to "static" and to configure client-1 VM's DNS settings so that it is mapped to DC-1's private IP address. The default of the virtual network for both DC-1 and client-1 is mapped so that client-1 going to Azure's Vnet DNS server, but the following steps will map client-1 to the domain controller, DC-1. So, whenever client-1 needs to look up any domain, i.e. microsoft.com, it will look to DC-1 server. Also, these steps allow client-1 VM to join the forest domain in later steps. On DC-1, turn the Windows Firewall state to "off" to test DNS connectivity between the two VMs. Note: Public IP Address DC-1 - 172.172.192.202, Public IP Address client-1 - 135.237.99.61). 
 
-- To configure DC-1's IP settings, navigate to the "compute infrastructure-virtual machines" page in Azure and click on the DC-1 VM.
-- Within DC-1, on the side panel menu, under the "Networking" tab, click on "Network settings".
-- In the "network interface/ip configuration" box on the top, click on the "dc-1637/ipconfig1" link to go inside and configure the NIC.
+- To configure DC-1's IP settings, navigate to the "compute infrastructure-virtual machines" and click on the DC-1 VM.
+- Within DC-1, on the side panel menu under the "Networking" tab click on "Network settings".
+- In the "network interface/ip configuration" box on the top right, click on the "dc-1637/ipconfig1" link to go inside and configure the NIC.
 - Near the bottom of the page, click on the "ipconfig1" link and set private IP address settings to "static" and click "Save".
 - After refreshing the screen, you should be able to see that the Private IP address is set to "static". The VM's private IP address should automatically populate in the text box. Copy this IP address to be used in client-1's DNS configuration.  
-- Navigate back to the "compute infrastructure-virtual machines" page and click on client-1 VM.
-- Within client-1, on the side panel menu, under the "Networking" tab, click on "Network settings", then click the NIC/IP configuration link "client-1499/ipconfig1".
-- Click on "ipconfig1" link and navigate to "DNS servers" under the "Settings" tab.
-- Select "custom" DNS server and enter the private IP address of DC-1 VM and hit the "apply" button.
-  
-- <br/>
-
-- Login to DC-1 server using admin credentials (labuser, Cyberworld123!) right click on Windows "Start" menu, and select "Run" and enter "wf.msc" to open Windows Defender firewall.
-- Navigate and click "Windows Defender Firewall Properties".
-- Turn the firewall state for each profile - domain profile, private profile, public profile - to "off". Apply and confirm the settings.
-- Login to client-1 VM using admin credentials, open Windows PowerShell to run as administrator, and ping DC-1's private IP address (10.0.0.4).
-- Using the "ping" bash in PowerShell to call to/connect to DC-1 will show that the NIC configuration settings were properly stored and client-1 will look to DC-1's DNS server when searching for a domain or ip address.
-- Last, in client-1's PowerShell, run the command "ipconfig /all" to display full details of every NIC on the host VM. You will see that the DNS server recognized is the private IP address of DC-1 VM.<br/>
-
-
-
 
 <p>
 <img width="1667" height="887" alt="1-DC1-Network settings" src="https://github.com/user-attachments/assets/89f30f6b-890d-409f-bd61-ccd2a8662173" />
