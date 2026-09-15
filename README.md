@@ -46,13 +46,6 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 -  Select "Review + Create" and finalize to create the resource group. It will take a few seconds but creating the resource group, you should see its existence within the Resource Manager.
 
 <p>
-  <img width="970" height="362" alt="1-AD Home Page - Finding Resources" src="https://github.com/user-attachments/assets/0431d6ce-c079-4708-9d7a-ffc27062a834" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
-  
-  <img width="962" height="506" alt="2-Find Resource Groups Mngr" src="https://github.com/user-attachments/assets/cb5c2e63-19a2-48c8-80ce-427a2d9a78b7" />
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   <img width="1241" height="706" alt="3-Create Resource Group" src="https://github.com/user-attachments/assets/167e5365-5f83-467d-8741-c12399cd0799" />
 
@@ -66,9 +59,7 @@ Set up a resource group and virtual network/subnet specifically for the Active D
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  <img width="1366" height="437" alt="5-Proof of RsrceGrp" src="https://github.com/user-attachments/assets/0db689a6-65f2-42d6-a2ba-cd0818949346" /><br/>
 
-  
 </p>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
