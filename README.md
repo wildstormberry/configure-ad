@@ -310,6 +310,14 @@ This is a two-part process that involves configuring the domain controller's (DC
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<p>
+
+
+- Using Remote Desktop, login to client-1 VM using admin credentials, open Windows PowerShell to run as administrator, and ping DC-1's private IP address (10.0.0.4).
+- Using the "ping" bash in PowerShell to call to/connect to DC-1 will show that the NIC configuration settings were properly stored and client-1 will look to DC-1's DNS server when searching for a domain or ip address.
+- Last, in client-1's PowerShell, run the command "ipconfig /all" to display full details of every NIC on the host VM. You will see that the DNS server recognized is the private IP address of DC-1 VM.<br/>
+
+</p>
 
 <img width="1367" height="970" alt="28-client1-powershell " src="https://github.com/user-attachments/assets/09e5a75b-0510-4a51-9d63-5a963b5dcd2f" />
 
